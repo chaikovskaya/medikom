@@ -1,5 +1,82 @@
 
 .footer {
+    background-color: #F8F9FA;
+    &-top {
+        padding-top: 24px;
+        padding-bottom: 20px;
+        border-bottom: 0.5px solid #D1D2DB;
+    }
+    &-top-container {
+        display: flex;
+        align-items: center;
+    }
+    &-socials {
+        margin-left: auto;
+    }
+    &-bottom {
+        display: flex;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 36px;
+    }
+    &-logo {
+        display: block;
+        width: 186px;
+        height: 46px;
+        margin-right: 35px;
+    }
+    &-copyright {
+        width: 330px;
+        margin-right: auto;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+    }
+    &-menu {
+        display: flex;
+    }
+    &-menu-item {
+        margin-right: 31px;
+    }
+    &-menu-link {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 18px;
+        color: #333333;
+        text-decoration: none;
+    }
+    &-contacts {
+        width: 16%;
+        padding-right: 20px;
+        &:last-child {
+            padding-right: 0;
+        }
+    }
+    &-contacts_wide {
+        width: 18%;
+    }
+    &-phone {
+        margin-bottom: 9px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        font-size: 17px;
+        line-height: 20px;
+        color: #1B1B1B;
+        a {
+            color: #1B1B1B;
+            font-weight: 500;
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    &-address {
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: -0.01em;
+    }
 }
 
 

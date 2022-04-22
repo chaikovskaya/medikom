@@ -2,12 +2,11 @@
 $mobile: 720px;
 $tablet: 992px;
 $notebook: 1440px;
-$desktop: 1200px;
-$large: 1640px;
+$desktop: 1370px;
 $gutters: 40px;
 $gutter: $gutters/2;
 
-$color: #828282;
+$color: #333333;
 
 * {
     box-sizing: border-box;
@@ -24,7 +23,7 @@ html, body {
 }
 
 body {
-    font: 15px/24px 'Nunito', sans-serif;
+    font: 15px/24px 'Montserrat', sans-serif;
     color: $color;
 	background-color: #fff;
 }
@@ -32,7 +31,7 @@ body {
 h1,
 .h1 {
     margin-bottom: 55px;
-	font: 800 36px/52px 'Nunito', sans-serif;
+	font: 800 36px/52px 'Manrope', sans-serif;
     color: #0D0C0B;
 	text-transform: uppercase;
 	letter-spacing: 0.085em;
@@ -42,7 +41,7 @@ h1,
 h2,
 .h2 {
     margin-bottom: 32px;
-	font: 600 26px/35px 'Nunito', sans-serif;
+	font: 600 26px/35px 'Manrope', sans-serif;
 	color: #0D0C0B;
 	text-transform: uppercase;
 }
@@ -50,22 +49,22 @@ h2,
 h3,
 .h3 {
     margin-bottom: 32px;
-    font: 800 22px/26px 'Nunito', sans-serif;
+    font: 800 22px/26px 'Manrope', sans-serif;
 	color: #0D0C0B;
 	letter-spacing: 0.085em;
 }
 
 h4,
 .h4 {
-    font: 700 18px/22px 'Nunito', sans-serif;
+    font: 700 18px/22px 'Manrope', sans-serif;
 	color: #0D0C0B;
 }
 
 a {
-	color: $color;
+	color: inherit;
     text-decoration: underline;
     &:hover {
-		color: $color;
+		color: inherit;
     }
 }
 
@@ -284,10 +283,10 @@ blockquote {
 
 .container {
 	min-width: 320px;
-	max-width: $large;
+	max-width: $desktop;
 	margin: 0 auto;
-	padding-right: $gutter;
-	padding-left: $gutter;
+	padding-right: 100px;
+	padding-left: 100px;
 }
 
 .content {
@@ -575,8 +574,6 @@ blockquote {
 .icon {
 	display: inline-block;
 	background: no-repeat 0 0;
-	width: 27px;
-	height: 27px;
 }
 /* /icons */
 

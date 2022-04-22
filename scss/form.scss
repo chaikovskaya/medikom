@@ -18,7 +18,7 @@ $colorPlaceholder: #828282;
     color: #828282;
     font-size: 15px;
     border: 1px solid #E0E0E0;
-    font-family: 'Nunito', sans-serif;
+    font-family: sans-serif;
     border-radius: 15px;
     &:focus {
         color: #828282;
@@ -46,7 +46,7 @@ $colorPlaceholder: #828282;
         font-size: 15px;
         resize: none;
         border: 1px solid #E0E0E0;
-        font-family: 'Nunito', sans-serif;
+        font-family: sans-serif;
         border-radius: 15px;
         transition: height 0.3s ease-in-out 0s;
         &:-webkit-autofill,
@@ -181,26 +181,30 @@ label.form-error {
 
 .button {
     @include bgrcolor();
+    position: relative;
     display: inline-block;
-    height: 50px;
-    line-height: 1.5em;
-    padding: 14px 33px;
-    font-weight: 600;
-    font-size: 15px;
-    text-align: center;
-    color: #fff;
+    height: 40px;
+    padding: 10px 27px 11px 27px;
     text-transform: uppercase;
-    background-color: #59A750;
     text-decoration: none;
     white-space: nowrap;
     border-width: 0;
     cursor: pointer;
-    border-radius: 25px;
-    box-shadow: 0px 8.14815px 6.51852px rgba(49, 49, 49, 0.0392593), 0px 1.85185px 3.14815px rgba(49, 49, 49, 0.0240741);
+    border-radius: 20px;
     -webkit-appearance: none;
+    text-align: center;
+    background-color: #FF3560;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.09em;
+    color: #FFFFFF;
+    transition: padding-right 0.2s linear;
     &:hover {
+        padding-right: 47px;
         color: #fff;
-        background-color: #FF5800;
+        background-color: #FF3560;
     }
     &:active {
         color: #fff;
@@ -209,18 +213,46 @@ label.form-error {
         opacity: 0.8;
         cursor: not-allowed;
     }
+    &-icon {
+        position: absolute;
+        top: 6px;
+        left: 100%;
+        margin-left: -35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0;
+        overflow: hidden;
+        height: 0;
+        background-color: #FFFFFF;
+        border-radius: 50%;
+        transition: width 0.2s linear;
+    }
+    &:hover &-icon {
+        width: 28px;
+        height: 28px;
+    }
 
-    &_simple {
-        background-color: #FF5800;
+    &-simple {
+        height: 33px;
+        padding: 10px 30px;
+        border: 0.5px solid #D1D2DB;
+        border-radius: 16px;
+        background-color: transparent;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 800;
+        font-size: 12px;
+        line-height: 12px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color: #526295;
+        &:hover {
+            color: #526295;
+        }
     }
-    &_disabled {
-        background-color: #BDBDBD;
-        box-shadow: none;
-    }
-    &_modified {
-        height: 43px;
-        line-height: 1.05em;
-    }
+
 }
 
 .switch {
