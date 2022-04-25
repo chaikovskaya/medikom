@@ -253,6 +253,25 @@ label.form-error {
         }
     }
 
+    &-modified {
+        height: 40px;
+        padding: 10px 30px;
+        border: 1px solid #526295;
+        border-radius: 20px;
+        background-color: transparent;
+        text-decoration: none;
+        cursor: pointer;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 800;
+        font-size: 14px;
+        line-height: 19px;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: #526295;
+        &:hover {
+            color: #526295;
+        }
+    }
 }
 
 .switch {
