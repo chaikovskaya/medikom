@@ -124,6 +124,14 @@ function initPopup() {
     });
 }
 
+function initSelect() {
+    $('.js-select').selectric({
+        disableOnMobile: false,
+        nativeOnMobile: false,
+        arrowButtonMarkup: '<b class="selectric-button"><i class="selectric-icon"></i></b>',
+    });
+}
+
 var sliderMainBanner;
 function initSliderMainBanner() {
     jQuery('.js-slider-main-banner').each(function() {
@@ -210,7 +218,7 @@ function initSliderAdvantages() {
     });
 }
 
-var sliderMainActions;
+var sliderActions;
 function initSliderActions() {
     jQuery('.js-slider-actions').each(function() {
         var $slider = $(this),
@@ -225,7 +233,11 @@ function initSliderActions() {
                 dynamicBullets: true,
                 clickable: true,
             },
-            navigation: false,
+            navigation: {
+                nextEl: $slider.find('.js-slider-next')[0],
+                prevEl: $slider.find('.js-slider-prev')[0],
+                disabledClass: "slider-button_disabled",
+            },
             spaceBetween: 33,
             slidesPerView: 1,
             mousewheel: {
@@ -280,6 +292,7 @@ $(document).ready(function () {
     initValidate();
     initMask();
     initPopup();
+    initSelect();
     initSliderMainBanner();
     initSliderAdvantages();
     initSliderActions();

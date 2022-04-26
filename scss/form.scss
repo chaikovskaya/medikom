@@ -1,27 +1,26 @@
 
-$colorPlaceholder: #828282;
+$colorPlaceholder: #64607D;
 
 .field {
     margin-bottom: 30px;
     &-label {
     }
-    &_simple {
-        margin-bottom: 40px;
-    }
 }
 
 .input {
     width: 100%;
-    height: 50px;
-    padding: 15px 32px;
+    height: 44px;
+    padding: 12px 28px 13px;
     background-color: #fff;
-    color: #828282;
+    color: #333333;
+    font-weight: 500;
     font-size: 15px;
-    border: 1px solid #E0E0E0;
-    font-family: sans-serif;
-    border-radius: 15px;
+    line-height: 19px;
+    border: 1px solid #D1D2DB;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 22px;
     &:focus {
-        color: #828282;
+        color: #333333;
     }
     &::-webkit-input-placeholder {color: $colorPlaceholder;}
     &:-moz-placeholder {color: $colorPlaceholder;}
@@ -38,16 +37,16 @@ $colorPlaceholder: #828282;
     &_textarea {
         display: block;
         width: 100%;
-        height: 50px;
-        padding: 15px 23px;
+        height: 44px;
+        padding: 12px 28px 13px;
         overflow: hidden;
         background-color: #fff;
         color: #828282;
         font-size: 15px;
         resize: none;
-        border: 1px solid #E0E0E0;
+        border: 1px solid #D1D2DB;
         font-family: sans-serif;
-        border-radius: 15px;
+        border-radius: 22px;
         transition: height 0.3s ease-in-out 0s;
         &:-webkit-autofill,
         &:-webkit-autofill:hover,
@@ -274,41 +273,162 @@ label.form-error {
     }
 }
 
+/*selectric*/
+.selectric-wrapper {
+    min-width: 166px;
+}
+.selectric {
+    height: 44px;
+    margin-bottom: -1px;
+    border-radius: 22px;
+    background-color: transparent;
+    padding: 12px 50px 12px 28px;
+    border: 1px solid #D1D2DB;
+}
+.selectric .label {
+    margin: 0;
+    height: auto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: #64607D;
+}
+.selectric:hover .label {
+}
+.selectric-open .label {
+}
+.selectric-items {
+    top: calc(100% + 1px);
+    min-width: 195px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    background-color: #fff;
+    border-width: 0;
+    box-shadow: 0px 0px 20px rgba(206, 206, 206, 0.4);
+}
+.selectric-above .selectric-items {
+    box-shadow: 0px 0px 20px rgba(206, 206, 206, 0.4);
+}
+.selectric-items li {
+    padding: 7px 28px;
+    font-size: 14px;
+    color: $color;
+}
+.selectric-items li:hover {
+    background-color: transparent;
+    color: #64607D;
+}
+.selectric-items li.highlighted {
+    color: #59A750;
+    background-color: transparent;
+}
+.selectric-items li.selected {
+    color: #64607D;
+    font-weight: 500;
+    background-color: transparent;
+}
+.selectric-button {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 100%;
+}
+.selectric-open {
+    z-index: 10;
+}
+.selectric-hover .selectric {
+    border-color: #ccc;
+}
+.selectric-focus .selectric {
+    border-color: #ccc;
+}
+.selectric-icon {
+    display: inline-block;
+    line-height: 0;
+    &:after {
+        content: '';
+        display: block;
+        width: 10px;
+        height: 6px;
+        background-image: url("data:image/svg+xml,%3Csvg width='10' height='6' viewBox='0 0 10 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.28474 1.43051e-06C9.11791 -0.000389448 8.95623 0.0692865 8.82777 0.196934L5.0007 4.03283L1.16649 0.33393C1.09346 0.262807 1.00942 0.209694 0.919213 0.177644C0.829006 0.145594 0.734407 0.135239 0.640852 0.147174C0.547297 0.159109 0.456631 0.193098 0.374066 0.24719C0.291501 0.301281 0.218664 0.374406 0.159742 0.462364C0.100432 0.549945 0.0561417 0.65072 0.0294153 0.758895C0.00268879 0.86707 -0.00594628 0.980513 0.00400639 1.0927C0.0139591 1.20489 0.0423032 1.31362 0.0874096 1.41263C0.132516 1.51164 0.193496 1.59899 0.266843 1.66964L4.55088 5.80522C4.67864 5.93115 4.83889 6 5.00427 6C5.16965 6 5.32991 5.93115 5.45767 5.80522L9.7417 1.52409C9.814 1.45221 9.87376 1.36393 9.91757 1.26431C9.96137 1.16469 9.98836 1.05568 9.99698 0.943539C10.0056 0.831393 9.99569 0.71831 9.96782 0.610765C9.93994 0.503219 9.89464 0.403326 9.83452 0.316805C9.76808 0.218585 9.68432 0.139235 9.58926 0.0844579C9.4942 0.029681 9.3902 0.000837779 9.28474 1.43051e-06Z' fill='%2364607D'/%3E%3C/svg%3E%0A");
+    }
+}
+.selectric:hover .selectric-icon {
+    color: #00597d;
+}
+.selectric-open .selectric {
+    border-color: #ccc;
+}
+.selectric-open .selectric-icon {
+    transform: scaleY(-1);
+}
+
+.selectric-items .select-disable {
+    display: none;
+}
+
+.select-simple {}
+.select-simple .selectric .label {
+    height: 34px;
+    line-height: 34px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-bottom-width: 0;
+    text-align: center;
+}
+.select-simple .selectric {
+    border: 1px solid #dcdcdc;
+    margin-bottom: 0;
+}
+.select-simple .selectric-button {
+    right: 5px;
+}
+.select-simple .selectric-items li {
+    text-align: left;
+}
+/*selectric*/
+
 .switch {
     display: flex;
     align-items: center;
     position: relative;
     &-field {
-        margin-top: 12x;
+        margin-top: 12px;
         margin-bottom: 12px;
     }
     &-decor {
         display: inline-block;
         vertical-align: middle;
         position: relative;
-        width: 47px;
-        min-width: 47px;
-        height: 25px;
-        margin-right: 15px;
+        width: 28px;
+        min-width: 28px;
+        height: 15px;
+        margin-right: 6px;
         padding: 2px;
         border-radius: 13px;
-        background-color: #59A750;
+        background-color: #526295;
         cursor: pointer;
     }
     &-icon {
         position: absolute;
-        top: 3px;
+        top: 2px;
         left: 3px;
-        width: 19px;
-        height: 19px;
+        width: 11px;
+        height: 11px;
         background-color: #fff;
         border-radius: 50%;
         box-shadow: 0px 0px 2px rgba(244, 163, 42, 0.6);
         transition: left 0.1s ease-in-out 0s;
     }
     &-label {
-        line-height: 21px;
-        font-size: 14px;
+        font-family: 'Nunito', sans-serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 40px;
         color: #828282;
     }
     &-label a {
@@ -328,29 +448,9 @@ label.form-error {
     &-checkbox:checked + &-decor {
     }
     &-checkbox:checked + &-decor &-icon {
-        left: 24px;
+        left: 14px;
     }
     &-checkbox:checked ~ &-label {
-        color: #333333;
-    }
-
-    &_simple &-label {
-        font-size: 16px;
-        color: $color;
-        a {
-            color: $color;
-        }
-    }
-    &_simple &-decor {
-        margin-right: 8px;
-        background-color: #e3e4ea;
-    }
-    &_simple &-checkbox:checked + &-decor {
-        background-color: #014161;
-    }
-
-    &-field_modified {
-        margin-top: 49px;
     }
 }
 

@@ -3,7 +3,7 @@ $mobile: 720px;
 $tablet: 992px;
 $notebook: 1440px;
 $desktop: 1370px;
-$gutters: 40px;
+$gutters: 30px;
 $gutter: $gutters/2;
 
 $color: #333333;
@@ -358,12 +358,21 @@ blockquote {
 }
 
 /* swiper */
+.swiper-pagination-bullets {
+	line-height: 0;
+	position: static;
+	width: auto!important;
+	transform: none!important;
+}
 .swiper-pagination-bullet {
+	left: 0!important;
 	width: 8px;
 	height: 8px;
 	background-color: #6C7AA5;
 	opacity: 1;
 	transition: height 0.3s linear;
+	margin-right: 6px!important;
+	margin-left: 6px!important;
 }
 .swiper-pagination-bullet-active {
 	background-color: #fff;
@@ -374,6 +383,9 @@ blockquote {
 .swiper-pagination-bullets-dynamic .swiper-pagination-bullet-active-next {
 	transform: none;
 }
+.swiper-pagination-bullets-dynamic .swiper-pagination-bullet {
+	transform: none;
+}
 /* /swiper */
 
 /* slider */
@@ -382,18 +394,25 @@ blockquote {
 		display: flex;
 		align-items: center;
 		position: relative;
-		min-width: 100px;
-		width: 105px;
+		margin-right: 17px;
 	}
 	&-button {
+		@include bgrcolor();
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: transparent;
-		width: 45px;
-		height: 30px;
-		line-height: 30px;
+		background: rgba(255, 255, 255, 0.5);
+		width: 28px;
+		height: 28px;
+		margin-right: 12px;
+		border-radius: 50%;
 		cursor: pointer;
+		&:last-child {
+			margin-right: 0;
+		}
+		&:hover {
+			background: rgba(255, 255, 255, 0.65);
+		}
 	}
 	&-button_right {}
 	&-button_next {
@@ -404,6 +423,10 @@ blockquote {
 	}
 	&-button_disabled:active {
 		border-color: #dcdcdc;
+	}
+	&-panel {
+		display: flex;
+		align-items: center;
 	}
 }
 /* /slider */
@@ -771,6 +794,7 @@ blockquote {
 	text-transform: uppercase;
 	color: #526295;
 	text-decoration: none;
+	white-space: nowrap;
 	&:hover {
 		color: #FF3560;
 	}
