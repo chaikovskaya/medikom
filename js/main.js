@@ -240,10 +240,6 @@ function initSliderActions() {
             },
             spaceBetween: 33,
             slidesPerView: 1,
-            mousewheel: {
-                invert: true,
-                releaseOnEdges: true,
-            },
             breakpoints: {
                 0: {
                     simulateTouch: false,
@@ -296,4 +292,5 @@ $(document).ready(function () {
     initSliderMainBanner();
     initSliderAdvantages();
     initSliderActions();
+    ymaps.ready(initMap);
 });

@@ -68,7 +68,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="button-simple" href="#">CКАЧАТЬ НАПРАВЛЕНИЕ</a>
+                    <a class="header-download-button button-simple" href="#">CКАЧАТЬ НАПРАВЛЕНИЕ</a>
                     <div class="header-socials socials">
                         <span class="socials-label">Следите за новостями:</span>
                         <ul class="socials-list">
@@ -281,7 +281,7 @@
                                 </span>
                                 <div class="advantages-name">Диагностика без очереди</div>
                             </div>
-                            <div class="advantages-content content">Вы можете записаться на удобное для вас время, чтобы пройти обследование без очереди.</div>
+                            <div class="advantages-content content">Вы можете записаться на удобное<br /> для вас время, чтобы пройти<br /> обследование без очереди.</div>
                         </div>
                         <div class="advantages-item swiper-slide advantages-item_recommendations">
                             <div class="advantages-panel">
@@ -655,14 +655,14 @@
                                     <input class="input js-mask-phone" type="text" placeholder="Ваш телефон" name="phone-1" required />
                                 </div>
                             </div>
-                            <div class="field">
+                            <div class="field field_simple">
                                 <select name="products-sort" class="js-select">
                                     <option selected>Выберите вид исследования</option>
                                     <option value="param-1">Параметр 1</option>
                                     <option value="param-2">Параметр 2</option>
                                 </select>
                             </div>
-                            <div class="field">
+                            <div class="field field_simple">
                                 <label class="switch">
                                     <input class="switch-checkbox" type="checkbox" name="notifications" checked="checked" />
                                     <span class="switch-decor">
@@ -678,6 +678,72 @@
         </svg></span>
                             </button>
                         </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="addresses">
+                <div class="container">
+                    <h2 class="h1">Адреса лабораторий</h2>
+                </div>
+                <div class="addresses-content">
+                    <div class="container">
+                        <div class="addresses-block">
+                            <ul class="addresses-list js-map"
+                                data-objectcoord="[53.194610, 45.023912]"
+                                data-map-id="map"
+                                data-map-icon=""
+                                data-icon-size="[77, 54]"
+                                data-icon-offset="[-35, -35]"
+                                data-class-active="addresses-list-item_active"
+                            >
+                                <li class="addresses-list-item js-map-item" data-objectid="1" data-objectcoord="[53.194610, 45.023912]">
+                                    <div class="addresses-box">
+                                        <div class="addresses-info">
+                                            <span class="addresses-name js-map-item-value">г. Пенза, ул. Славы, 10</span>
+                                            <div class="addresses-phone">
+                                                тел. <a href="tel:+79375966633">+ 7 (937) 596-66-33</a>
+                                            </div>
+                                            <div class="addresses-working-mode">Режим работы: пн-пт 9:00-18.00</div>
+                                        </div>
+                                        <div class="addresses-pic">
+                                            <img class="addresses-img" src="./images/addresses/addresses-img-1.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="addresses-list-item js-map-item" data-objectid="2" data-objectcoord="[53.224584, 44.922412]">
+                                    <div class="addresses-box">
+                                        <div class="addresses-info">
+                                            <span class="addresses-name js-map-item-value">г. Пенза, ул. Бородина, 2</span>
+                                            <div class="addresses-phone">
+                                                тел. <a href="tel:+78412767505">+7 8412 76-75-05</a>
+                                            </div>
+                                            <div class="addresses-working-mode">Режим работы: пн-пт 9:00-18.00</div>
+                                        </div>
+                                        <div class="addresses-pic">
+                                            <img class="addresses-img" src="./images/addresses/addresses-img-2.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="addresses-list-item js-map-item" data-objectid="3" data-objectcoord="[54.186816, 45.176985]">
+                                    <div class="addresses-box">
+                                        <div class="addresses-info">
+                                            <span class="addresses-name js-map-item-value">г. Саранск, ул. Богдана Хмельницкого</span>
+                                            <div class="addresses-phone">
+                                                тел. <a href="tel:+78412767505">+7 8412 76-75-05</a>
+                                            </div>
+                                            <div class="addresses-working-mode">Режим работы: пн-пт 9:00-18.00</div>
+                                        </div>
+                                        <div class="addresses-pic">
+                                            <img class="addresses-img" src="./images/addresses/addresses-img-3.jpg" alt="" />
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="addresses-map">
+                        <div class="addresses-map-inner" id="map"></div>
                     </div>
                 </div>
             </div>
@@ -784,6 +850,8 @@
     <script src="./libs/swiper/swiper.min.js"></script>
     <script src="./libs/swiper/swiper-bundle.min.js"></script>
     <script src="./libs/Selectric/public/jquery.selectric.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+    <script src="./js/map.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
 
     <script src="./js/main.js"></script>

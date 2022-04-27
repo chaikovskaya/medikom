@@ -1,8 +1,8 @@
 
 .header {
     &-top {
-        padding-top: 17px;
-        padding-bottom: 20px;
+        padding-top: 19px;
+        padding-bottom: 17px;
         border-bottom: 1px solid #D1D2DB;
     }
     &-top-container {
@@ -17,12 +17,12 @@
     }
     &-phone {
         position: relative;
-        margin-right: 53px;
+        margin-right: 50px;
     }
     &-phone-panel {
         display: flex;
         align-items: center;
-        margin-bottom: 4px;
+        margin-bottom: 6px;
     }
     &-phone-dropdown {
         display: none;
@@ -104,6 +104,8 @@
     }
     &-socials {
         margin-left: auto;
+    }
+    &-download-button {
     }
 }
 

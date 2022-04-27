@@ -285,7 +285,6 @@ blockquote {
 }
 
 .content {
-	letter-spacing: 0.085em;
     b {
 		color: #0D0C0B;
 	}
@@ -394,7 +393,7 @@ blockquote {
 		display: flex;
 		align-items: center;
 		position: relative;
-		margin-right: 17px;
+		margin-right: 9px;
 	}
 	&-button {
 		@include bgrcolor();
