@@ -1,7 +1,7 @@
 
 $mobile: 720px;
 $tablet: 992px;
-$notebook: 1440px;
+$notebook: 1100px;
 $desktop: 1370px;
 $gutters: 30px;
 $gutter: $gutters/2;
@@ -280,8 +280,8 @@ blockquote {
 	min-width: 320px;
 	max-width: $desktop;
 	margin: 0 auto;
-	padding-right: 100px;
-	padding-left: 100px;
+	padding-right: 50px;
+	padding-left: 50px;
 }
 
 .content {
@@ -832,8 +832,33 @@ and (max-width: $tablet){
 		font-size: 14px;
 		line-height: 22px;
 	}
+	.main-content {
+		padding-bottom: 60px;
+	}
+	.container {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.link {
+		font-size: 12px;
+		line-height: 24px;
+		&-icon {
+			width: 11px;
+		}
+	}
+	.swiper-pagination-bullet {
+		width: 5px;
+		height: 5px;
+	}
 }
 
 @media screen
 and (max-width: $mobile){
+	.link {
+		font-size: 11px;
+		line-height: 21px;
+		&-icon {
+			margin-left: 15px;
+		}
+	}
 }

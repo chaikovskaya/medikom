@@ -265,6 +265,19 @@ function initSliderActions() {
     });
 }
 
+function initMobileMenu() {
+    if (typeof(MobileMenu) === 'undefined' || !jQuery.isFunction(MobileMenu)) {
+        return false;
+    }
+
+    var common = {};
+
+    jQuery('.JS-MobileMenu').not('.JS-MobileMenu-ready').each(function() {
+        var local = GLOBAL.parseData(jQuery(this).data('mobilemenu'));
+        new MobileMenu(this, jQuery.extend({}, common, local));
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -293,4 +306,5 @@ $(document).ready(function () {
     initSliderAdvantages();
     initSliderActions();
     ymaps.ready(initMap);
+    initMobileMenu();
 });

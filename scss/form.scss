@@ -61,9 +61,9 @@ $colorPlaceholder: #64607D;
 
 input.form-error {
     display: block;
-    border-color: #d25a5f;
+    border-color: #FF3560;
     &:focus {
-        border-color: #d25a5f;
+        border-color: #FF3560;
     }
 }
 label.form-error {
@@ -464,6 +464,27 @@ and (min-width: $desktop){
 
 @media screen
 and (max-width: $tablet){
+    .button {
+        height: 34px;
+        border-radius: 17px;
+        padding: 9px 46px 11px 25px;
+        font-size: 12px;
+        line-height: 16px;
+        &-icon {
+            top: 5px;
+            width: 24px;
+            height: 24px;
+            margin-left: -30px;
+        }
+
+        &-simple {
+            height: 30px;
+            padding: 10px 20px 7px;
+            border-radius: 16px;
+            font-size: 9px;
+            line-height: 9px;
+        }
+    }
 }
 
 @media screen
