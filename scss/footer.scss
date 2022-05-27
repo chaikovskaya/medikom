@@ -105,6 +105,95 @@
     &-socials-mob {
         display: none;
     }
+    &-phone-block {
+        display: none;
+        position: relative;
+    }
+    &-phone-panel {
+        display: flex;
+        align-items: center;
+        margin-bottom: 6px;
+    }
+    &-phone-dropdown {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 2;
+        width: 300px;
+        max-height: 200px;
+        overflow: auto;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        background-color: #fff;
+        border-radius: 0 0 15px 15px;
+        box-shadow: 0px 10px 20px #EFEFEF;
+    }
+    &-phone-link {
+        text-decoration: none;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-right: 14px;
+    }
+    &-phone-icon {
+        vertical-align: middle;
+        margin-right: 12px;
+    }
+    &-phone-switcher {
+        display: inline-block;
+        padding: 3px;
+        line-height: 0px;
+        margin-top: -1px;
+    }
+    &-arrow-icon {
+    }
+    &-phone-label {
+        vertical-align: middle;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 23px;
+        color: #1B1B1B;
+        font-family: 'Manrope', sans-serif;
+    }
+    &-phone-list-item {
+        margin-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 28px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &-phone-number {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 20px;
+        color: #2D2A1E;
+        &:hover {
+            color: #2D2A1E;
+        }
+    }
+    &-address {
+        margin-left: 0;
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 12px;
+        letter-spacing: -0.01em;
+        color: #333333;
+        font-family: 'Montserrat', sans-serif;
+    }
+    &-address_top {
+        margin-left: 28px;
+    }
+    &-phone_active {
+    }
+    &-phone_active &-phone-dropdown {
+        display: block;
+    }
+    &-phone_active &-arrow-icon {
+        transform: scaleY(-1);
+    }
 
     @media screen
     and (max-width: $desktop){
@@ -145,6 +234,51 @@
         &-contacts {
             display: none;
         }
+
+        &-phone-block {
+            display: block;
+            order: 1;
+            margin-left: 30px;
+        }
+        &-phone-icon {
+            width: 13px;
+            margin-right: 8px;
+        }
+        &-phone-label {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &-phone-link {
+            margin-right: 10px;
+        }
+        &-arrow-icon {
+            width: 8.5px;
+        }
+        &-address_top {
+            margin-left: 24px;
+        }
+        &-address {
+            font-size: 8px;
+            line-height: 10px;
+        }
+        &-phone-number {
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &-phone-dropdown {
+            top: auto;
+            bottom: calc(100% + 10px);
+            width: 158px;
+            border-radius: 15px 15px 0 0;
+            box-shadow: 0px -10px 20px #EFEFEF;
+            padding-top: 15px;
+            padding-bottom: 30px;
+        }
+        &-phone-list-item {
+            margin-bottom: 15px;
+            padding-left: 24px;
+        }
+
         &-develop {
             min-height: 35px;
             padding-top: 9px;
@@ -166,12 +300,13 @@
             display: none;
         }
         &-bottom {
-            flex-direction: column;
+            flex-wrap: wrap;
             align-items: normal;
             padding-top: 30px;
             padding-bottom: 11px;
         }
         &-logo {
+            width: 100%;
             margin-right: 0;
             margin-bottom: 23px;
         }
@@ -184,6 +319,11 @@
             padding-left: $gutter;
             padding-right: $gutter;
             border-top: 0.5px solid #D1D2DB;
+        }
+        &-phone-block {
+            order: initial;
+            margin-left: 0;
+            margin-right: auto;
         }
         &-develop {
             min-height: 34px;
