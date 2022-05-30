@@ -175,7 +175,7 @@ function initSliderMainBanner() {
     });
 }
 
-var sliderMainAdvantages;
+var sliderAdvantages = undefined;
 function initSliderAdvantages() {
     jQuery('.js-slider-advantages').each(function() {
         var $slider = $(this),
@@ -217,6 +217,12 @@ function initSliderAdvantages() {
         });
     });
 }
+function reInitSliderAdvantages() {
+    if (sliderAdvantages) {
+        sliderAdvantages.destroy();
+    }
+    sliderAdvantages = undefined;
+}
 
 var sliderActions;
 function initSliderActions() {
@@ -238,19 +244,19 @@ function initSliderActions() {
                 prevEl: $slider.find('.js-slider-prev')[0],
                 disabledClass: "slider-button_disabled",
             },
-            spaceBetween: 33,
             slidesPerView: 1,
             breakpoints: {
                 0: {
                     simulateTouch: false,
+                    spaceBetween: 25,
                 },
                 720: {
                     simulateTouch: false,
+                    spaceBetween: 17,
                 },
                 992: {
                     simulateTouch: false,
-                },
-                1370: {
+                    spaceBetween: 33,
                 },
             },
             on: {
@@ -282,10 +288,19 @@ function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
         GLOBAL.widthWindow = 'isMobile';
+        if (sliderAdvantages != undefined) {
+            reInitSliderAdvantages();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
+        if (sliderAdvantages == undefined) {
+            initSliderAdvantages();
+        }
     } else {
         GLOBAL.widthWindow = '';
+        if (sliderAdvantages == undefined) {
+            initSliderAdvantages();
+        }
     }
 }
 
@@ -303,7 +318,6 @@ $(document).ready(function () {
     initPopup();
     initSelect();
     initSliderMainBanner();
-    initSliderAdvantages();
     initSliderActions();
     ymaps.ready(initMap);
     initMobileMenu();

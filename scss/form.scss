@@ -470,11 +470,19 @@ and (max-width: $tablet){
         padding: 9px 46px 11px 25px;
         font-size: 12px;
         line-height: 16px;
+        &:hover {
+            padding-right: 46px;
+        }
         &-icon {
             top: 5px;
             width: 24px;
             height: 24px;
             margin-left: -30px;
+            transition: none;
+        }
+        &:hover &-icon {
+            width: 24px;
+            height: 24px;
         }
 
         &-simple {
@@ -483,6 +491,12 @@ and (max-width: $tablet){
             border-radius: 16px;
             font-size: 9px;
             line-height: 9px;
+        }
+        &-modified {
+            height: 34px;
+            padding: 9px 24px;
+            font-size: 12px;
+            line-height: 16px;
         }
     }
 }
