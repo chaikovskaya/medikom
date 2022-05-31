@@ -15,7 +15,6 @@
     }
     &-bottom {
         display: flex;
-        align-items: center;
         padding-top: 20px;
         padding-bottom: 36px;
     }
@@ -29,9 +28,11 @@
         height: 46px;
     }
     &-copyright {
-        flex-grow: 1;
-        max-width: 330px;
+        width: 30%;
+        max-width: 347px;
         margin-right: auto;
+        padding-top: 3px;
+        padding-right: 20px;
         font-weight: 500;
         font-size: 12px;
         line-height: 20px;
@@ -52,6 +53,7 @@
     }
     &-contacts {
         width: 16%;
+        min-width: 160px;
         padding-right: 20px;
         &:last-child {
             padding-right: 0;
@@ -224,9 +226,10 @@
             height: 32px;
         }
         &-copyright {
-            flex-grow: 1;
-            max-width: 273px;
+            width: auto;
+            max-width: 294px;
             margin-right: auto;
+            padding-top: 1px;
             font-weight: 500;
             font-size: 10px;
             line-height: 18px;
@@ -311,6 +314,7 @@
             margin-bottom: 23px;
         }
         &-copyright {
+            flex-grow: 1;
             max-width: none;
             margin-top: 24px;
             margin-left: -$gutter;

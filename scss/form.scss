@@ -464,6 +464,18 @@ and (min-width: $desktop){
 
 @media screen
 and (max-width: $tablet){
+    .field {
+        margin-bottom: 25px;
+    }
+    .input {
+        height: 34px;
+        padding: 8px 23px 10px;
+        font-size: 13px;
+        line-height: 16px;
+        &::placeholder {
+            font-size: 13px;
+        }
+    }
     .button {
         height: 34px;
         border-radius: 17px;
@@ -497,6 +509,41 @@ and (max-width: $tablet){
             padding: 9px 24px;
             font-size: 12px;
             line-height: 16px;
+        }
+    }
+    .selectric {
+        height: 34px;
+        padding: 8px 50px 10px 23px;
+    }
+    .selectric .label {
+        font-size: 13px;
+        line-height: 16px;
+    }
+    .selectric-button {
+        right: 24px;
+    }
+    .selectric-items li {
+        padding-left: 23px;
+        padding-rigth: 23px;
+        font-size: 13px;
+    }
+    .switch {
+        &-label {
+            font-size: 9px;
+            line-height: 14px;
+        }
+        &-decor {
+            width: 22px;
+            min-width: 22px;
+            height: 12px;
+        }
+        &-icon {
+            top: 2px;
+            width: 8px;
+            height: 8px;
+        }
+        &-checkbox:checked + &-decor &-icon {
+            left: 12px;
         }
     }
 }

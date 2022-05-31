@@ -271,6 +271,52 @@ function initSliderActions() {
     });
 }
 
+var sliderNews = undefined;
+function initSliderNews() {
+    jQuery('.js-slider-news').each(function() {
+        var $slider = $(this),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderNews = new Swiper($slider[0], {
+            loop: isStart,
+            pagination: false,
+            navigation: false,
+            spaceBetween: 0,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    slidesPerView: 1,
+                    spaceBetween: 25,
+                },
+                720: {
+                    simulateTouch: false,
+                    slidesPerView: 2,
+                    spaceBetween: 26,
+                },
+                992: {
+                    simulateTouch: false,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                },
+            },
+        });
+    });
+}
+function reInitSliderNews() {
+    if (sliderNews) {
+        sliderNews.destroy();
+    }
+    sliderNews = undefined;
+}
+
 function initMobileMenu() {
     if (typeof(MobileMenu) === 'undefined' || !jQuery.isFunction(MobileMenu)) {
         return false;
@@ -291,15 +337,24 @@ function initResizeWindow() {
         if (sliderAdvantages != undefined) {
             reInitSliderAdvantages();
         }
+        if (sliderNews == undefined) {
+            initSliderNews();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         if (sliderAdvantages == undefined) {
             initSliderAdvantages();
         }
+        if (sliderNews == undefined) {
+            initSliderNews();
+        }
     } else {
         GLOBAL.widthWindow = '';
         if (sliderAdvantages == undefined) {
             initSliderAdvantages();
+        }
+        if (sliderNews != undefined) {
+            reInitSliderNews();
         }
     }
 }
