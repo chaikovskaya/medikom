@@ -36,11 +36,11 @@ function initMap() {
                     "type": "Feature",
                     "id": objectId,
                     "options": {
-                        //iconLayout: 'default#image',
-                        //iconImageHref: iconUrl,
-                        //iconImageSize: iconSize,
-                        //iconImageOffset: iconOffset,
-                        "preset": "islands#blueIcon",
+                        iconLayout: 'default#image',
+                        iconImageHref: iconUrl,
+                        iconImageSize: iconSize,
+                        iconImageOffset: iconOffset,
+                        //"preset": "islands#blueIcon",
                     },
                     "geometry":{
                         "type": "Point",

@@ -396,7 +396,6 @@ blockquote {
 		margin-right: 9px;
 	}
 	&-button {
-		@include bgrcolor();
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -406,16 +405,19 @@ blockquote {
 		margin-right: 12px;
 		border-radius: 50%;
 		cursor: pointer;
+		background: url("../images/icons/button-left.png") no-repeat center center;
 		border: 1px solid #fff;
 		&:last-child {
 			margin-right: 0;
 		}
 		&:hover {
-			background: rgba(255, 255, 255, 1);
+			border-color: transparent;
+			background-image: url("../images/icons/button-left-active.png");
 		}
 	}
-	&-button_right {}
+	&-button_prev {}
 	&-button_next {
+		transform: scaleX(-1);
 	}
 	&-button_disabled {
 		cursor: auto;

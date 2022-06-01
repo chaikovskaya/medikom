@@ -13,11 +13,12 @@
         display: block;
         width: 186px;
         height: 46px;
-        margin-right: 62px;
+        margin-right: 59px;
     }
     &-phone {
         position: relative;
-        margin-right: 50px;
+        margin-right: auto;
+        padding-right: 10px;
     }
     &-phone-panel {
         display: flex;
@@ -103,15 +104,40 @@
         transform: scaleY(-1);
     }
     &-socials {
-        margin-left: auto;
+        margin-left: 32px;
     }
+    &-socials-label {}
     &-download-button {
+        margin-left: auto;
     }
     &-download-button-mob {
         display: none;
     }
     &-menu-container {
         display: flex;
+    }
+    &-location {
+        margin-top: -10px;
+        margin-right: 10px;
+    }
+}
+
+.location {
+    display: flex;
+    min-width: 122px;
+    &-label {
+        text-decoration: underline;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+    }
+    &-icon {
+        margin-right: 10px;
+        margin-bottom: -1px;
+    }
+    &:hover &-label {
+       text-decoration: none;
     }
 }
 
@@ -634,6 +660,27 @@ and (min-width: $desktop) {
 
 @media screen
 and (max-width: $desktop) {
+    .header {
+        &-logo {
+            margin-right: 40px;
+        }
+        &-socials-label {
+            display: none;
+        }
+        &-phone-label {
+            font-size: 15px;
+        }
+        &-socials {
+            margin-left: 22px;
+        }
+        &-download-button {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+    .location {
+        min-width: 100px;
+    }
 }
 
 @media screen
@@ -654,7 +701,7 @@ and (max-width: $tablet){
             display: none;
         }
         &-phone {
-            margin-right: 30px;
+            padding-right: 30px;
         }
         &-phone-icon {
             width: 13px;
@@ -695,6 +742,22 @@ and (max-width: $tablet){
         }
         &-download-button-mob {
             display: inline-block;
+        }
+        &-socials-label {
+            display: inline-block;
+        }
+    }
+    .location {
+        display: inline-block;
+        min-width: 100px;
+        &-label {
+            font-size: 11px;
+            line-height: 14px;
+        }
+        &-icon {
+            width: 10px;
+            margin-right: 8px;
+            margin-bottom: -2px;
         }
     }
     .socials {
@@ -760,6 +823,9 @@ and (max-width: $mobile){
             display: none;
         }
         &-socials {
+            display: none;
+        }
+        &-location {
             display: none;
         }
     }
