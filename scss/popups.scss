@@ -23,21 +23,26 @@
 
 .fancybox-close {
     position: absolute;
-    top: -20px;
-    right: 0;
+    top: -23px;
+    left: 100%;
+    margin-left: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 19px;
+    height: 19px;
     cursor: pointer;
     background-color: transparent;
-    color: #fff;
-    font-size: 12px;
+    border: 2px solid #fff;
+    border-radius: 50%;
 }
 .fancybox-close:hover {
 }
 
 .fancybox-close-icon {
-    margin-left: 5px;
-    color: #afafaf;
-    font-size: 20px;
-    vertical-align: middle;
+    path {
+        fill: #fff;
+    }
 }
 .fancybox-close:hover .fancybox-close-icon {
     color: #fff;
@@ -127,8 +132,25 @@
 }
 
 .popup {
-    width: 510px;
-    padding: 42px 30px 50px;
+    width: 798px;
+    background-color: #fff;
+    padding: 44px 33px 52px;
+    border-radius: 5px;
+    &-title {
+        margin-bottom: 20px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 39px;
+        color: #1B1B1B;
+    }
+    &-info {
+        margin-bottom: 33px;
+        letter-spacing: -0.01em;
+        color: #4F4F4F;
+        font-size: 15px;
+        line-height: 25px;
+    }
 }
 
 .decor-popup {
@@ -145,6 +167,22 @@
 
 @media screen
 and (max-width: $tablet){
+    .popup {
+        width: 100%;
+        padding: 34px 20px 42px;
+    }
+    .fancybox-close {
+        top: 20px;
+        left: auto;
+        right: 15px;
+        margin-left: 0;
+        border-color: #526295;
+    }
+    .fancybox-close-icon {
+        path {
+            fill: #526295;
+        }
+    }
 }
 
 @media screen
