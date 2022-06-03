@@ -141,8 +141,12 @@
         }
     }
     &-img {
-        width: 48.8%;
-        position: relative;
+        position: absolute;
+        top: 0;
+        left: 51.2%;
+        height: 100%;
+        display: inline-block;
+        overflow: hidden;
         &:before {
             content: '';
             position: absolute;
@@ -158,7 +162,7 @@
             content: '';
             position: absolute;
             top: 0;
-            left: 100%;
+            right: 0;
             margin-left: 324px;
             width: 150px;
             height: 100%;
@@ -166,8 +170,10 @@
         }
     }
     &-pic {
-        max-width: 1043px;
+        width: auto;
+        max-width: max-content;
         max-height: none;
+        object-fit: cover;
     }
     &-info {
         position: relative;
@@ -237,7 +243,7 @@
         display: flex;
         flex-direction: column;
         width: 301px;
-        padding: 34px 25px 25px;
+        padding: 34px 25px 20px;
         background-color: #fff;
     }
     &-video-info {
@@ -250,7 +256,7 @@
         position: absolute;
         bottom: 0 !important;
         left: 50%;
-        margin-left: -219px;
+        margin-left: -223px;
         z-index: 1;
         max-width: 11px;
         height: 170px;
@@ -265,9 +271,28 @@
     }
 
     @media screen
+    and (max-width: 1500px){
+        &-item_modified &-pic {
+            margin-left: -87px;
+        }
+    }
+
+    @media screen
     and (max-width: $desktop){
         &-video {
             margin-left: -188px;
+        }
+        &-img {
+            max-width: calc(49% + 50px);
+            &:before {
+                display: none;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        &-item_modified &-pic {
+            margin-left: 0;
         }
         &-pic {
             width: auto;
@@ -295,7 +320,11 @@
             padding-right: 17px;
         }
         &-img {
-            width: 48%;
+            max-width: calc(49% + 15px);
+        }
+        &-pic {
+            height: 100%;
+            object-fit: cover;
         }
         &-block {
             height: 452px;
@@ -306,7 +335,7 @@
             line-height: 31px;
         }
         &-detail {
-            margin-bottom: 37px;
+            margin-bottom: 31px;
             font-weight: 500;
             font-size: 14px;
             line-height: 22px;
@@ -328,7 +357,7 @@
         }
         &-video-detail {
             width: 238px;
-            padding: 21px 15px 25px 21px;
+            padding: 21px 15px 20px 21px;
         }
         &-video-info {
             font-size: 13px;
@@ -456,14 +485,14 @@
     &-list {
         display: flex;
         padding-top: 50px;
-        padding-bottom: 119px;
+        padding-bottom: 101px;
     }
     &-item {
-        width: 430px;
+        width: 444px;
         padding-right: 44px;
     }
     &-item_wide {
-        width: 51%;
+        width: 51.3%;
     }
     &-item_diagnostic {
         width: 362px;
@@ -486,6 +515,7 @@
         margin-bottom: 22px;
     }
     &-content {
+        max-width: 380px;
         font-size: 15px;
         line-height: 25px;
     }
@@ -625,7 +655,7 @@
         margin-bottom: 45px;
     }
     &-title {
-        margin-top: -12px;
+        margin-top: -19px;
         margin-bottom: 27px;
         align-self: center;
     }
@@ -754,7 +784,7 @@
             line-height: 14px;
         }
         &-box {
-            padding: 18px 23px 23px;
+            padding: 21px 23px 23px;
         }
         &-name {
             margin-bottom: 10px;
@@ -864,7 +894,7 @@
     }
     &-title {
         display: block;
-        margin-bottom: 27px;
+        margin-bottom: 20px;
         color: #FFFFFF;
     }
     &-name {
@@ -949,6 +979,7 @@
         right: 50%;
         margin-right: 47px;
         z-index: 1;
+        min-width: 116px;
     }
     &-item_simple {
         background-color: #FF3560;
@@ -1134,18 +1165,18 @@
 }
 
 .articles {
-    margin-bottom: 84px;
+    margin-bottom: 71px;
     display: flex;
     flex-wrap: wrap;
     &-title {
         position: relative;
         z-index: 1;
-        margin-bottom: 3px;
+        margin-bottom: 24px;
     }
     &-button {
-        margin-top: 7px;
+        margin-top: 9px;
         margin-left: auto;
-        margin-bottom: 20px;
+        margin-bottom: 44px;
     }
     &-block {
         display: flex;
@@ -1157,6 +1188,8 @@
     }
     &-img {
         width: 45.5%;
+        position: relative;
+        top: -24px;
         align-self: flex-end;
     }
     &-img-wrapper {
@@ -1182,8 +1215,8 @@
     }
     &-logo {
         position: absolute;
-        top: 65px;
-        right: 13px;
+        top: 67px;
+        right: 37px;
         margin-right: 0;
         width: 78px;
         height: 322px;
@@ -1268,7 +1301,7 @@
     }
     @media screen
     and (max-width: $tablet){
-        margin-bottom: 63px;
+        margin-bottom: 27px;
         &-button {
             margin-top: 0;
         }
@@ -1277,6 +1310,7 @@
             padding-right: 10px;
         }
         &-img {
+            top: -33px;
             width: 48.4%;
         }
         &-img-wrapper {
@@ -1294,8 +1328,8 @@
         &-logo {
             width: 43px;
             height: 181px;
-            top: 145px;
-            right: 99px;
+            top: 144px;
+            right: 82px;
         }
         &-pic {
             max-width: 276px;
@@ -1436,14 +1470,14 @@
     }
     &-box {
         display: flex;
-        padding: 23px 27px 27px;
+        padding: 24px 27px 27px;
     }
     &-info {
         flex-grow: 1;
     }
     &-name {
         display: block;
-        margin-bottom: 25px;
+        margin-bottom: 24px;
         font-weight: 500;
         font-size: 16px;
         line-height: 26px;
@@ -1506,7 +1540,7 @@
     }
     &-short-link {
         display: flex;
-        padding-top: 23px;
+        padding-top: 20px;
         padding-bottom: 23px;
         border: solid #D1D2DB;
         border-width: 1px 0 0;

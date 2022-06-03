@@ -151,6 +151,7 @@
         font-size: 15px;
         line-height: 25px;
     }
+    &_booking {}
 }
 
 .decor-popup {
@@ -164,12 +165,100 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.location-popup {
+    position: absolute;
+    top: calc(100% + 32px);
+    left: -31px;
+    z-index: 2;
+    width: 356px;
+    padding: 27px 30px 34px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 0.5px solid #D1D2DB;
+    box-shadow: 0 0 10px rgba(197, 195, 199, 0.25);
+    &-info {
+        margin-bottom: 23px;
+        font-size: 15px;
+        line-height: 25px;
+        text-align: center;
+        color: #1B1B1B;
+        a {
+            font-weight: 600;
+        }
+    }
+    &-actions {
+        display: flex;
+    }
+    &-button {
+        width: 138px;
+        padding-left: 27px;
+        padding-right: 27px;
+        margin-right: 20px;
+        border-color: #D1D2DB;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            padding-right: 27px;
+        }
+    }
+    &-icon {
+        position: absolute;
+        top: -15px;
+        left: 44px;
+        z-index: 1;
+        width: 32px;
+        height: 15px;
+        overflow: hidden;
+    }
+}
+
+.popup-city {
+    width: 297px;
+    padding: 29px 29px 47px;
+    &-title {
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 23px;
+        color: #1B1B1B;
+    }
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &-list-item {
+        margin-right: 23px;
+    }
+}
+
 
 @media screen
 and (max-width: $tablet){
     .popup {
-        width: 100%;
         padding: 34px 20px 42px;
+        &-title {
+            font-size: 26px;
+            line-height: 38px;
+        }
+        &-info {
+            margin-bottom: 25px;
+            font-size: 13px;
+            line-height: 21px;
+        }
+    }
+    .location-popup {
+        top: calc(100% + 24px);
+        width: 270px;
+        padding: 20px 21px 25px;
+        &-info {
+            margin-bottom: 23px;
+            font-size: 13px;
+            line-height: 21px;
+        }
+        &-button {
+            width: 103px;
+        }
     }
     .fancybox-close {
         top: 20px;

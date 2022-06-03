@@ -111,6 +111,12 @@
 	font-family: 'Lato';
 	src: local("Lato"), url("../fonts/lato/latomedium.ttf");
 	font-weight: 500;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: local("Lato"), url("../fonts/lato/latomediumitalic.ttf");
+	font-weight: 500;
 	font-style: italic;
 }
 

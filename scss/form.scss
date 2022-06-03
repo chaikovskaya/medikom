@@ -161,21 +161,34 @@ label.form-error {
         opacity: 0;
     }
     &-label {
-        color: #333333;
+        font-weight: 500;
         font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.01em;
     }
     &-check {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
+        position: relative;
+        width: 19px;
+        height: 19px;
         margin-right: 11px;
-        border: 1px solid #BDBDBD;
         border-radius: 50%;
         text-align: center;
         background-color: #fff;
+        border: 1px solid #D1D2DB;
+        &:after {
+            content: '';
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+        }
     }
     &-input:checked + &-check {
-        border: 6px solid #59A750;
+        &:after {
+            background-color: #526295;
+        }
     }
     &-input:checked ~ &-label {
     }
@@ -199,7 +212,7 @@ label.form-error {
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     font-size: 14px;
-    line-height: 19px;
+    line-height: 1.4em;
     letter-spacing: 0.09em;
     color: #FFFFFF;
     transition: padding-right 0.2s linear;
@@ -257,7 +270,7 @@ label.form-error {
 
     &-modified {
         height: 40px;
-        padding: 10px 30px;
+        padding: 10px 30px 11px;
         border: 1px solid #526295;
         border-radius: 20px;
         background-color: transparent;
@@ -266,10 +279,11 @@ label.form-error {
         font-family: 'Manrope', sans-serif;
         font-weight: 800;
         font-size: 14px;
-        line-height: 19px;
+        line-height: 1.3em;
         letter-spacing: 0.09em;
         text-transform: uppercase;
         color: #526295;
+        text-align: center;
         &:hover {
             color: #526295;
         }
@@ -508,7 +522,7 @@ and (max-width: $tablet){
             height: 34px;
             padding: 9px 24px;
             font-size: 12px;
-            line-height: 16px;
+            line-height: 1.2em;
         }
     }
     .selectric {
