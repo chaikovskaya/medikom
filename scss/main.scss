@@ -490,6 +490,9 @@
     &-item {
         width: 444px;
         padding-right: 44px;
+        &:last-child {
+            padding-right: 0;
+        }
     }
     &-item_wide {
         width: 51.3%;
@@ -547,6 +550,9 @@
     }
     &-item_recommendations  &-pic {
         margin-top: -2px;
+    }
+    &-item_result {
+        width: 380px;
     }
     &-item_result &-pic {
         max-width: 34px;
@@ -956,7 +962,7 @@
         position: absolute;
         top: -188px;
         left: 0;
-        z-index: 2;
+        z-index: 1;
         margin-left: -385px;
         width: 566px;
         height: 775px;
@@ -1370,7 +1376,7 @@
         &-detail {
             width: 100%;
             padding-right: 0;
-            margin-bottom: 5px;
+            margin-bottom: 40px;
         }
         &-img {
             width: 100%;
@@ -1463,6 +1469,7 @@
     }
     &-img {
         display: block;
+        width: 100%;
         border-radius: 4px;
     }
     &-block:hover &-img {
@@ -1562,6 +1569,7 @@
     }
     &-short-pic {
         display: block;
+        width: 100%;
         border-radius: 4px;
     }
     &-short-block {
