@@ -866,6 +866,7 @@
     &-item_simple {}
     &-detail {
         position: relative;
+        z-index: 2;
         width: 53.4%;
         display: flex;
         flex-direction: column;
@@ -895,6 +896,15 @@
         font-weight: 600;
         font-size: 24px;
         line-height: 35px;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &-link {
+        display: block;
+        width: 100%;
+        height: 100%;
     }
     &-info {
         margin-bottom: 38px;
@@ -965,9 +975,6 @@
         animation: animation-actions-2 19s linear infinite;
         transform: rotate(-11deg);
     }
-    .swiper-slide-active &-detail {
-        z-index: 2;
-    }
     &-item.swiper-slide-active &-decor-1 {
         display: block;
     }
@@ -1007,6 +1014,14 @@
             stroke: #526295;
         }
     }
+
+    /* IE 11 */
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+        &-detail {
+            display: block;
+        }
+    }
+    /* /IE 11 */
 
     @media screen
     and (max-width: $tablet){
@@ -1845,21 +1860,32 @@
             content: '';
             position: absolute;
             bottom: 0;
-            left: 0;
-            margin-left: -30px;
+            right: -30px;
             width: 687px;
             height: 100%;
+            max-width: none;
             background: url("../images/entry/entry-bgr.png") no-repeat -5px -439px;
         }
+    }
+    &_simple &-img {
+        width: 57%;
+    }
+    &_simple &-img-wrapper:before {
+        max-width: none;
+        right: 0;
+        left: auto;
     }
     &-logo {
         content: '';
         position: absolute;
         top: 69px;
-        left: 186px;
+        right: 358px;
         margin-right: 0;
         width: 78px;
         height: 322px;
+    }
+    &_simple &-logo {
+        right: 370px;
     }
     &-pic {
         position: relative;
@@ -1897,6 +1923,7 @@
             margin-left: auto;
             margin-right: auto;
             &:before {
+                right: 10px;
                 width: 397px;
                 height: 378px;
                 background-image: url("../images/entry/entry-bgr-mob.png");
@@ -1913,9 +1940,15 @@
         }
         &-logo {
             top: 129px;
-            left: 44px;
+            right: 236px;
             width: 49px;
             height: 200px;
+        }
+        &_simple &-img {
+            width: 51%;
+        }
+        &_simple &-logo {
+            right: 216px;
         }
         &-title {
             margin-bottom: 27px;
@@ -1934,6 +1967,10 @@
             line-height: 36px;
         }
         &-img {
+            width: 100%;
+            padding-right: 0;
+        }
+        &_simple &-img {
             width: 100%;
         }
         &-detail {
@@ -1960,11 +1997,13 @@
         }
         &-logo {
             top: 103px;
-            left: 52px;
+            right: 197px;
             width: 41px;
             height: 170px;
         }
-
+        &_simple &-logo {
+            right: 198px;
+        }
         &_simple &-pic {
             max-width: 217px;
         }
