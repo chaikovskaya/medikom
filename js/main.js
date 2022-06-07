@@ -463,6 +463,24 @@ function initPopupCity() {
     });
 }
 
+function initAjaxMore() {
+    if (typeof(AjaxMore) === 'undefined' || !jQuery.isFunction(AjaxMore)) {
+        return false;
+    }
+
+    var common = {
+        beforeSend: function () {
+        },
+        success: function () {
+        }
+    };
+
+    $('.JS-AjaxMore').not('.JS-AjaxMore-ready').each(function(){
+        var local = GLOBAL.parseData(jQuery(this).data('ajaxmore'));
+        new AjaxMore(this, jQuery.extend({}, common, local));
+    });
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -513,4 +531,5 @@ $(document).ready(function () {
     initPopupBooking();
     initForm();
     initPopupCity();
+    initAjaxMore();
 });

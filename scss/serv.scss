@@ -201,16 +201,41 @@
 }
 
 .serv {
-    &-list {}
+    margin-bottom: 115px;
+    &-list {
+        margin-bottom: 34px;
+    }
     &-item {
         margin-bottom: 30px;
+    }
+    &-actions {
+        margin-bottom: 124px;
     }
 
     @media screen
     and (max-width: $tablet){
+        margin-bottom: 60px;
+        &-list {
+            margin-bottom: -3px;
+        }
         &-item {
             margin-bottom: 25px;
         }
+        &-actions {
+            margin-bottom: 65px;
+        }
+    }
+
+    @media screen
+    and (max-width: $mobile){
+        &-list {
+            margin-bottom: 11px;
+        }
+        &-item:last-child {
+            margin-bottom: 0;
+        }
+        &-actions {
+            margin-bottom: 49px;
+        }
     }
 }
-

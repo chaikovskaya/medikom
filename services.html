@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/common.css" />
  </head>
 
-<body class="main-page">
+<body>
     <div class="svg-box">
         <svg id="logo"  viewBox="0 0 186 46" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.70221 20.3145C3.74297 10.4209 11.868 0.30641 21.9883 0.0157312C25.0619 -0.113183 28.1169 0.551964 30.8587 1.94702C25.1474 0.114575 18.4002 0.416881 13.5726 4.27245C8.8438 8.12802 5.47658 14.3346 6.38932 20.5505C5.08591 22.5341 2.70234 23.5282 1.60823 25.6513C0.957105 27.1001 1.84076 28.507 2.5442 29.7348C1.06639 32.2242 2.82326 34.7601 3.43368 37.2145C3.8697 39.3435 2.68373 42.0305 4.5964 43.6537C5.41866 44.4102 6.43947 44.9167 7.53924 45.114C6.82998 45.0385 6.11375 44.9687 5.4045 44.9106C4.15104 44.2036 3.1814 43.084 2.66071 41.7425C2.14003 40.4009 2.10051 38.9203 2.54887 37.5529C1.47336 35.1275 0.199015 32.5625 0.879204 29.8348C0.0617556 28.4733 -0.198573 26.8489 0.152506 25.3002C0.874553 23.0364 3.10813 21.8841 4.70221 20.3145Z" fill="#FF3560"/>
@@ -479,7 +479,7 @@
             </div>
 
             <div class="container">
-                <div class="JS-AjaxMore">
+                <div class="serv JS-AjaxMore">
                     <div class="serv-list row JS-AjaxMore-Content">
                         <div class="serv-item col-md-6">
                             <div class="services-link">
@@ -590,7 +590,7 @@
                                             <a class="services-img-link" href="#">
                                                 <img class="services-img" src="./images/services/services-img-6.jpg" alt="" />
                                             </a>
-                                            <span class="services-mark services-mark_popular">ПОПУЛЯРНОЕ</span>
+                                            <span class="services-mark services-mark_popular">Челюсть</span>
                                         </span>
                                 <a class="services-box" href="#">
                                     <span class="services-name">КЛКТ черепа/лицевого скелета</span>
@@ -611,7 +611,7 @@
                                             <a class="services-img-link" href="#">
                                                 <img class="services-img" src="./images/services/services-img-7.jpg" alt="" />
                                             </a>
-                                            <span class="services-mark">СКИДКА 10%</span>
+                                            <span class="services-mark">Челюсть</span>
                                         </span>
                                 <a class="services-box" href="#">
                                     <span class="services-name">КЛКТ сегмента</span>
@@ -648,12 +648,10 @@
                         </div>
                     </div>
                     <div class="load-more">
-                        <span class="load-more-block">
-                            <a class="load-more-link more button-modified JS-AjaxMore-Link" href="javascript:;">
-                                <span class="load-more-label">ПОКАЗАТЬ ЕЩЁ</span>
-                                <i class="load-more-icon las la-redo-alt"></i>
-                            </a>
-                        </span>
+                        <a class="load-more-link button-modified JS-AjaxMore-Link" href="javascript:;">
+                            <span class="load-more-label">ПОКАЗАТЬ ЕЩЁ</span>
+                            <i class="load-more-icon las la-redo-alt"></i>
+                        </a>
                         <div class="load-more-pages">
                             <ul class="pager JS-AjaxMore-Pager">
                                 <li class="pager-item">
@@ -676,14 +674,35 @@
                     </div>
                 </div>
 
-                <div class="actions">
+                <div class="serv-actions">
+                    <div class="actions">
                     <div class="actions-container js-slider-actions">
                         <!-- Четным добавить класс actions-item_simple -->
                         <ul class="actions-list swiper-wrapper">
+                            <li class="actions-item actions-item_simple swiper-slide">
+                                <div class="actions-detail">
+                                    <span class="actions-title h1">Акция</span>
+                                    <span class="actions-name">"Оптом дешевле"</span>
+                                    <div class="actions-info content">Приведи друга и получи скидку 15% для двоих на 3d снимок 2х челюстей.</span></div>
+                                    <a class="actions-button button js-popup-booking" href="javascript:;" data-src="./ajax/booking-online.html" data-index="id-1">
+                                        ЗАПИСАТЬСЯ<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
+                                        <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg></span>
+                                    </a>
+                                </div>
+                                <div class="actions-img">
+                                    <img class="actions-pic" src="./images/actions/actions-img-2.jpg" alt="" />
+                                </div>
+                                <div class="actions-decor">
+                                    <div class="actions-decor-1"></div>
+                                    <div class="actions-decor-2"></div>
+                                </div>
+                            </li>
                             <li class="actions-item swiper-slide">
                                 <div class="actions-detail">
                                     <span class="actions-title h1">Акция</span>
-                                    <span class="actions-name">"Скидка для родственников"</span>
+                                    <span class="actions-name">"Скидка на повторное"</span>
                                     <div class="actions-info content">Сделай Компьютерную томографию обеих челюстей и получи скидку 15% на то же исследование для родственников <span class="actions-label">в течение месяца.</span></div>
                                     <a class="actions-button button js-popup-booking" href="javascript:;" data-src="./ajax/booking-online.html" data-index="id-2">
                                         ЗАПИСАТЬСЯ<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -695,26 +714,10 @@
                                 <div class="actions-img">
                                     <img class="actions-pic" src="./images/actions/actions-img-1.jpg" alt="" />
                                 </div>
-                                <div class="actions-decor-1"></div>
-                                <div class="actions-decor-2"></div>
-                            </li>
-                            <li class="actions-item actions-item_simple swiper-slide">
-                                <div class="actions-detail">
-                                    <span class="actions-title h1">Акция</span>
-                                    <span class="actions-name">"Скидка для родственников"</span>
-                                    <div class="actions-info content">Сделай Компьютерную томографию обеих челюстей и получи скидку 15% на то же исследование для родственников <span class="actions-label">в течение месяца.</span></div>
-                                    <a class="actions-button button js-popup-booking" href="javascript:;" data-src="./ajax/booking-online.html" data-index="id-1">
-                                        ЗАПИСАТЬСЯ<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
-                                        <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg></span>
-                                    </a>
+                                <div class="actions-decor">
+                                    <div class="actions-decor-1"></div>
+                                    <div class="actions-decor-2"></div>
                                 </div>
-                                <div class="actions-img">
-                                    <img class="actions-pic" src="./images/actions/actions-img-1.jpg" alt="" />
-                                </div>
-                                <div class="actions-decor-1"></div>
-                                <div class="actions-decor-2"></div>
                             </li>
                         </ul>
 
@@ -727,6 +730,52 @@
                         </div>
                     </div>
                 </div>
+                </div>
+
+                <div class="entry entry_simple">
+                    <div class="entry-img">
+                        <div class="entry-img-wrapper">
+                            <img class="entry-pic" src="./images/entry/entry-img-1.png" alt="" />
+                            <svg class="entry-logo"><use xlink:href="#logo-modified"></use></svg>
+                        </div>
+                    </div>
+                    <div class="entry-detail">
+                        <span class="entry-title h1">Запишитесь на обследование онлайн.</span>
+                        <form class="js-form-validate js-form">
+                            <div class="row">
+                                <div class="field col-lg-6 js-form-validate-field">
+                                    <input class="input" type="text" placeholder="Ваше имя" name="name-1" />
+                                </div>
+                                <div class="field col-lg-6 js-form-validate-field">
+                                    <input class="input js-mask-phone" type="text" placeholder="Ваш телефон" name="phone-1" required />
+                                </div>
+                            </div>
+                            <div class="field field_simple">
+                                <select name="products-sort" class="js-select">
+                                    <option selected>Выберите вид исследования</option>
+                                    <option value="id-1">КЛКТ сегмента</option>
+                                    <option value="id-2">КЛКТ челюстей</option>
+                                </select>
+                            </div>
+                            <div class="field field_simple">
+                                <label class="switch">
+                                    <input class="switch-checkbox js-form-checkbox" type="checkbox" name="notifications" checked="checked" />
+                                    <span class="switch-decor">
+                                        <span class="switch-icon"></span>
+                                    </span>
+                                    <span class="switch-label">Я согласен на обработку персональных данных</span>
+                                </label>
+                            </div>
+                            <button class="button js-form-button">
+                                ЗАПИСАТЬСЯ<span class="button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
+        <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
+        </svg></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
             </div>
 
         </main>
@@ -917,6 +966,7 @@
     <script src="./js/map.js"></script>
     <script src="./js/JSC.Dropdown.js"></script>
     <script src="./js/JSC.MobileMenu.js"></script>
+    <script src="./js/JSC.AjaxMore.js"></script>
 
     <script src="./js/main.js"></script>
 

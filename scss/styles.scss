@@ -272,6 +272,9 @@ blockquote {
 }
 
 .main-content {
+	padding-bottom: 90px;
+}
+.main-page .main-content {
 	padding-bottom: 120px;
 }
 
@@ -498,62 +501,6 @@ blockquote {
 @keyframes preloader-rotate {
 	100% {
 		transform: rotate(360deg);
-	}
-}
-
-.load-more {
-	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	&-label {
-	}
-	&_active {}
-	&-icon {
-		display: none;
-		vertical-align: middle;
-		margin-left: 2px;
-		color: #1d1d1d;
-	}
-	&-block {
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	&-link {
-		text-decoration: none;
-	}
-	&-label {
-		display: inline-block;
-	}
-	&-switcher {
-		display: inline-block;
-		text-transform: uppercase;
-		font-weight: 700;
-		font-size: 12px;
-		line-height: 11px;
-		color: $color;
-	}
-	&_active &-label {
-	}
-	&_active &-icon {
-		display: inline-block;
-		animation: preloader-rotate 2s infinite linear;
-	}
-	&-pages {
-		display: flex;
-		align-items: center;
-		flex-wrap: wrap;
-		margin-left: auto;
-	}
-	&-slider-nav {
-		margin-left: 43px;
-	}
-	&-pic {
-		vertical-align: middle;
-		margin-left: 7px;
-		margin-top: -5px;
 	}
 }
 
@@ -843,6 +790,9 @@ and (max-width: $tablet){
 		line-height: 22px;
 	}
 	.main-content {
+		padding-bottom: 55px;
+	}
+	.main-page .main-content {
 		padding-bottom: 60px;
 	}
 	.container {
@@ -889,6 +839,9 @@ and (max-width: $tablet){
 
 @media screen
 and (max-width: $mobile){
+	.main-content {
+		padding-bottom: 60px;
+	}
 	.link {
 		font-size: 11px;
 		line-height: 21px;
