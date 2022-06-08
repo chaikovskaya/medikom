@@ -466,13 +466,13 @@ blockquote {
     content: '';
     display: inline-block;
     vertical-align: middle;
-    width: 5px;
-    height: 5px;
+    width: 2px;
+    height: 2px;
     border-radius: 50%;
-    margin-top: -2px;
+    margin-top: -3px;
     margin-left: -13px;
-    margin-right: 9px;
-    background-color: #828282; }
+    margin-right: 10px;
+    background-color: #4F4F4F; }
 
 .content ol {
   margin-top: 7px;
@@ -4383,6 +4383,8 @@ body.mob-menu-show {
     width: 43%;
     padding-top: 9px;
     margin-left: auto; }
+  .entry_modified {
+    margin-bottom: 0; }
   @media screen and (min-width: 992px) {
     .entry_simple .entry-img-wrapper:before {
       margin-left: 0;
@@ -4423,7 +4425,9 @@ body.mob-menu-show {
       .entry_simple .entry-logo {
         right: 216px; }
       .entry-title {
-        margin-bottom: 27px; } }
+        margin-bottom: 27px; }
+      .entry_modified {
+        margin-bottom: 0; } }
   @media screen and (max-width: 720px) {
     .entry {
       flex-direction: column;
@@ -4465,7 +4469,9 @@ body.mob-menu-show {
       .entry_simple .entry-logo {
         right: 198px; }
       .entry_simple .entry-pic {
-        max-width: 217px; } }
+        max-width: 217px; }
+      .entry_modified {
+        margin-bottom: 0; } }
 
 .addresses-content {
   position: relative;
@@ -4969,11 +4975,15 @@ body.mob-menu-show {
   border-radius: 4px; }
 
 .serv-detail-content {
-  margin-bottom: 95px; }
+  margin-bottom: 100px; }
+
+@media screen and (max-width: 992px) {
+  .serv-detail-content {
+    margin-bottom: 49px; } }
 
 /* faq */
 .faq {
-  margin-bottom: 80px; }
+  margin-bottom: 100px; }
   .faq-item {
     display: flex;
     flex-direction: column;
@@ -4981,25 +4991,22 @@ body.mob-menu-show {
     border: 0 solid #EDEDED;
     border-top-width: 1px;
     overflow: hidden; }
-  .faq-item:last-child {
-    border-bottom-width: 1px; }
   .faq-panel {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 65px;
-    padding: 21px 29px;
+    padding: 21px 38px 21px 29px;
     cursor: pointer; }
   .faq-name {
     font-size: 18px;
     line-height: 21px;
-    font-weight: 700;
+    font-weight: 500;
     font-family: 'Manrope', sans-serif; }
   .faq-info {
     display: none;
     padding: 22px 30px 24px;
     font-weight: 500;
-    font-size: 16px;
     line-height: 30px; }
   .faq-info p:last-child {
     margin-bottom: 0; }
@@ -5011,7 +5018,8 @@ body.mob-menu-show {
     display: flex;
     align-items: center;
     margin-left: 10px;
-    text-decoration: none;
+    text-decoration: none; }
+  .faq-label {
     font-family: 'Manrope', sans-serif;
     font-weight: 800;
     font-size: 14px;
@@ -5020,10 +5028,12 @@ body.mob-menu-show {
     text-transform: uppercase; }
   .faq-item:hover {
     position: relative;
+    z-index: 2;
     border-top-color: transparent;
     border-bottom-color: transparent;
     background-color: #fff;
-    border-radius: 4px; }
+    border-radius: 4px;
+    box-shadow: 0 4px 60px #EFEFEF; }
   .faq-item:hover .faq-panel {
     background-color: #FF3560; }
   .faq-item:hover .faq-link {
@@ -5031,11 +5041,12 @@ body.mob-menu-show {
   .faq-item:hover .faq-name {
     color: #fff; }
   .faq-item_active {
+    position: relative;
+    z-index: 1;
+    background-color: #fff;
     border-top-color: transparent;
     box-shadow: 0 4px 60px #EFEFEF;
     border-radius: 4px; }
-  .faq-item_active:hover {
-    position: static; }
   .faq-item_active .faq-info {
     display: block; }
   .faq-item_active .faq-panel {
@@ -5043,6 +5054,33 @@ body.mob-menu-show {
   .faq-item_active:last-child {
     border-bottom-color: #EDEDED; }
   .faq-item_active .faq-name {
-    color: #fff; }
+    color: #fff;
+    font-weight: 700; }
   .faq-item_active .faq-link {
-    visibility: visible; }
+    visibility: visible;
+    color: #fff; }
+  @media screen and (max-width: 992px) {
+    .faq {
+      margin-bottom: 60px; }
+      .faq-panel {
+        min-height: 49px;
+        padding: 14px 40px 17px 24px; }
+      .faq-name {
+        font-size: 15px;
+        line-height: 18px; }
+      .faq-info {
+        padding: 16px 63px 20px 24px;
+        line-height: 22px; }
+      .faq-icon {
+        display: none; }
+      .faq-label {
+        font-size: 11px; } }
+  @media screen and (max-width: 720px) {
+    .faq-title {
+      margin-bottom: 23px; }
+    .faq-icon {
+      display: inline-block; }
+    .faq-label {
+      display: none; }
+    .faq-panel {
+      padding-right: 19px; } }

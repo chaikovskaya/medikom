@@ -1898,6 +1898,10 @@
         margin-left: auto;
     }
 
+    &_modified {
+        margin-bottom: 0;
+    }
+
     @media screen
     and (min-width: $tablet){
         &_simple &-img-wrapper:before {
@@ -1953,6 +1957,9 @@
         &-title {
             margin-bottom: 27px;
         }
+        &_modified {
+            margin-bottom: 0;
+        }
     }
     @media screen
     and (max-width: $mobile){
@@ -2007,8 +2014,10 @@
         &_simple &-pic {
             max-width: 217px;
         }
+        &_modified {
+            margin-bottom: 0;
+        }
     }
-
 }
 
 .addresses {
