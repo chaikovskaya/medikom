@@ -1015,6 +1015,11 @@
         }
     }
 
+    &_modified {}
+    &_modified &-item.swiper-slide-active &-decor-2 {
+        display: block;
+    }
+
     /* IE 11 */
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         &-detail {
@@ -1091,6 +1096,9 @@
             animation: animation-actions-1 8s linear infinite;
         }
         &-item_simple.swiper-slide-active &-decor-2 {
+            display: none;
+        }
+        &_modified &-item.swiper-slide-active &-decor-2 {
             display: none;
         }
     }

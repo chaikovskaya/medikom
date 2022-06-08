@@ -117,6 +117,7 @@
         color: #FFFFFF;
     }
     &-pic {
+        max-height: 423px;
         margin-top: auto;
         margin-left: auto;
         margin-right: auto;
@@ -255,6 +256,13 @@
         line-height: 35px;
         letter-spacing: 0.01em;
     }
+    &_serv-detail {}
+    &_clients {}
+    &_clients &-img {
+        margin-top: -40px;
+    }
+    &_clients &-detail {
+    }
 
     @media screen
     and (max-width: $desktop) {
@@ -280,6 +288,9 @@
         }
         &-img {
             margin-top: 0;
+        }
+        &-pic {
+            max-height: 303px;
         }
         &-price {
             margin-right: 25px;
@@ -320,11 +331,11 @@
         &_modified &-text {
             max-width: 378px;
         }
-        &_modified &-detail {
+        &_serv-detail &-detail {
             width: 60%;
             padding-right: 10px;
         }
-        &_modified &-img {
+        &_serv-detail &-img {
             width: 40%;
         }
     }
@@ -395,6 +406,12 @@
         }
         &_modified &-pic {
             max-height: 200px;
+        }
+        &_clients &-pic {
+            max-height: 250px;
+        }
+        &_clients &-img {
+            margin-top: 0;
         }
     }
 }

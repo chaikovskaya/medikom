@@ -515,6 +515,50 @@ function initAccordion() {
     });
 }
 
+var sliderClientsRegister = undefined;
+function initSliderClientsRegister() {
+    jQuery('.js-slider-clients-register').each(function() {
+        var $slider = $(this),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderClientsRegister = new Swiper($slider[0], {
+            loop: false,
+            pagination: false,
+            navigation: false,
+            spaceBetween: 0,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    slidesPerView: 2,
+                },
+                720: {
+                    simulateTouch: false,
+                    slidesPerView: 2,
+                   },
+                992: {
+                    simulateTouch: false,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                },
+            },
+        });
+    });
+}
+function reInitSliderClientsRegister() {
+    if (sliderClientsRegister) {
+        sliderClientsRegister.destroy();
+    }
+    sliderClientsRegister = undefined;
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -525,6 +569,9 @@ function initResizeWindow() {
         if (sliderNews == undefined) {
             initSliderNews();
         }
+        if (sliderClientsRegister != undefined) {
+            reInitSliderClientsRegister();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         if (sliderAdvantages == undefined) {
@@ -533,6 +580,9 @@ function initResizeWindow() {
         if (sliderNews == undefined) {
             initSliderNews();
         }
+        if (sliderClientsRegister == undefined) {
+            initSliderClientsRegister()
+        }
     } else {
         GLOBAL.widthWindow = '';
         if (sliderAdvantages == undefined) {
@@ -540,6 +590,9 @@ function initResizeWindow() {
         }
         if (sliderNews != undefined) {
             reInitSliderNews();
+        }
+        if (sliderClientsRegister != undefined) {
+            reInitSliderClientsRegister();
         }
     }
 }

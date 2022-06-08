@@ -776,7 +776,7 @@ and (max-width: $desktop){
 and (max-width: $tablet){
 	h1,
 	.h1 {
-		margin-bottom: 32px;
+		margin-bottom: 25px;
 		font-size: 26px;
 		line-height: 38px;
 	}
@@ -828,7 +828,7 @@ and (max-width: $tablet){
 		margin-left: 4px !important;
 	}
 	.breadcrumbs {
-		margin-bottom: 37px;
+		margin-bottom: 20px;
 		&-item {
 			margin-right: 8px;
 		}
