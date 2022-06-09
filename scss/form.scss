@@ -614,10 +614,8 @@ and (max-width: $tablet){
 and (min-width: $mobile) and (max-width: $tablet) {
     .load-more {
         &-link {
-            height: 40px;
-            padding: 10px 30px 11px;
-            font-size: 14px;
-            line-height: 1.3em;
+            padding-left: 26px;
+            padding-right: 26px;
         }
     }
 }

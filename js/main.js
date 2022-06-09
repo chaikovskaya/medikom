@@ -559,6 +559,51 @@ function reInitSliderClientsRegister() {
     sliderClientsRegister = undefined;
 }
 
+
+var sliderDoctorsAdvantages = undefined;
+function initSliderDoctorsAdvantages() {
+    jQuery('.js-slider-doctors-advantages').each(function() {
+        var $slider = $(this),
+            sliderLength = $slider.find('.swiper-slide').length;
+
+        var isStart = sliderLength > 1 ? true : false;
+
+        sliderDoctorsAdvantages = new Swiper($slider[0], {
+            loop: false,
+            pagination: false,
+            navigation: false,
+            spaceBetween: 0,
+            breakpoints: {
+                0: {
+                    simulateTouch: false,
+                    slidesPerView: 2,
+                },
+                720: {
+                    simulateTouch: false,
+                    slidesPerView: 2,
+                },
+                992: {
+                    simulateTouch: false,
+                },
+            },
+            on: {
+                beforeInit: function () {
+                },
+                init: function () {
+                },
+                slideChangeTransitionEnd: function () {
+                },
+            },
+        });
+    });
+}
+function reInitSliderDoctorsAdvantages() {
+    if (sliderDoctorsAdvantages) {
+        sliderDoctorsAdvantages.destroy();
+    }
+    sliderDoctorsAdvantages = undefined;
+}
+
 function initResizeWindow() {
     var width = $(window).outerWidth();
     if (width <= GLOBAL.mobile) {
@@ -572,6 +617,9 @@ function initResizeWindow() {
         if (sliderClientsRegister != undefined) {
             reInitSliderClientsRegister();
         }
+        if (sliderDoctorsAdvantages != undefined) {
+            reInitSliderDoctorsAdvantages();
+        }
     } else if (width <= GLOBAL.tablet) {
         GLOBAL.widthWindow = 'isTablet';
         if (sliderAdvantages == undefined) {
@@ -583,6 +631,9 @@ function initResizeWindow() {
         if (sliderClientsRegister == undefined) {
             initSliderClientsRegister()
         }
+        if (sliderDoctorsAdvantages == undefined) {
+            initSliderDoctorsAdvantages();
+        }
     } else {
         GLOBAL.widthWindow = '';
         if (sliderAdvantages == undefined) {
@@ -593,6 +644,9 @@ function initResizeWindow() {
         }
         if (sliderClientsRegister != undefined) {
             reInitSliderClientsRegister();
+        }
+        if (sliderDoctorsAdvantages != undefined) {
+            reInitSliderDoctorsAdvantages();
         }
     }
 }

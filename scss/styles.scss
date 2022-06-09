@@ -68,7 +68,7 @@ a img {
 }
 
 p {
-    margin-bottom: 47px;
+    margin-bottom: 30px;
 }
 
 ul {
@@ -287,6 +287,12 @@ blockquote {
 }
 
 .content {
+	h1, .h1 {
+		margin-top: 47px;
+	}
+	h2, .h2 {
+		margin-top: 47px;
+	}
     b {
 		color: #0D0C0B;
 	}
@@ -300,7 +306,7 @@ blockquote {
     ul {
         margin-left: 14px;
 		margin-top: 7px;
-        margin-bottom: 55px;
+        margin-bottom: 30px;
     }
     ul li {
         margin-bottom: 22px;
@@ -793,7 +799,7 @@ and (max-width: $tablet){
 		line-height: 22px;
 	}
 	p {
-		margin-bottom: 30px;
+		margin-bottom: 33px;
 	}
 	.main-content {
 		padding-bottom: 55px;
@@ -847,6 +853,12 @@ and (max-width: $tablet){
 	.content {
 		font-size: 14px;
 		line-height: 22px;
+		h1, .h1 {
+			margin-top: 33px;
+		}
+		h2, .h2 {
+			margin-top: 33px;
+		}
 		ul {
 			margin-bottom: 33px;
 		}

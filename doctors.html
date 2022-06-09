@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Пациентам. Медиком</title>
+    <title>Врачам. Медиком</title>
 
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
@@ -440,7 +440,7 @@
 
         <main class="main-content">
 
-            <div class="main-info main-info_modified main-info_clients main-info_simple">
+            <div class="main-info main-info_modified main-info_simple main-info_doctors">
                 <div class="main-info-container container">
                     <div class="breadcrumbs js-expand" data-expand="{
                         'classActive': 'breadcrumbs_active',
@@ -455,26 +455,18 @@
                                 </a>
                             </li>
                             <li class="breadcrumbs-item">
-                                <span class="breadcrumbs-label">Пациентам</span>
+                                <span class="breadcrumbs-label">Врачам</span>
                             </li>
                             <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
                         </ul>
                     </div>
 
                     <div class="main-info-detail">
-                        <h1 class="main-info-title">Пациентам</h1>
-                        <div class="main-info-text">КЛКТ челюстей — это все необходимые сечения (аксиальные, кросс-секции, панорамные реформаты)</div>
-                        <div class="main-info-panel">
-                            <a class="button js-popup-booking" href="javascript:;" data-src="./ajax/booking-online.html" data-index="id-1">
-                                ЗАПИСАТЬСЯ<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
-                                <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg></span>
-                            </a>
-                        </div>
+                        <h1 class="main-info-title">Врачам</h1>
+                        <div class="main-info-text">КЛКТ челюстей — это все необходимые сечения (аксиальные, кросс-секции, панорамные реформаты) для получения полного представления:</div>
                     </div>
                     <div class="main-info-img">
-                        <img class="main-info-pic" src="./images/clients/clients-img-1.png" alt="" />
+                        <img class="main-info-pic" src="./images/doctors/doctors-img-1.png" alt="" />
                     </div>
 
                     <div class="main-info-decor-1"></div>
@@ -488,127 +480,113 @@
             </div>
 
             <div class="container">
-                <div class="clients-register">
-                    <h2 class="clients-register-title h1">Как записаться на обследование</h2>
-                    <div class="clients-register-container js-slider-clients-register">
-                        <ol class="clients-register-list swiper-wrapper">
-                            <li class="clients-register-item swiper-slide">
-                                <div class="clients-register-panel">
-                                    <span class="clients-register-decor"></span>
-                                    <span class="clients-register-number">1</span>
+                <div class="doctors JS-AjaxMore">
+                    <h2 class="h1">Специализируемся на следующих направлениях</h2>
+                    <ul class="doctors-list row JS-AjaxMore-Content">
+                        <li class="doctors-list-item col-lg-6 doctors-list-item_modified-1">
+                            <div class="doctors-list-block">
+                                <div class="doctors-list-box">
+                                    <span class="doctors-list-name">Ортопедия</span>
+                                    <div class="doctors-list-info content">Специальное позиционирование пациента для дальнейшей оценки костных структур и оценки кранио-вертебрального взаиморасположения</div>
                                 </div>
-                                <div class="clients-register-block">
-                                    <div class="clients-register-name">Получить направление от&nbsp;лечащего врача</div>
-                                    <div class="clients-register-detail content">(Стоматолога, челюстно‑лицевого хирурга, ЛОР‑врача), в котором указывается тип необходимого исследования и зона интереса, а также клиническая задача.</div>
+                                <div class="doctors-list-pic">
+                                    <img class="doctors-list-img" src="./images/doctors/doctors-img-2.png" alt="" />
                                 </div>
-                            </li>
-                            <li class="clients-register-item swiper-slide">
-                                <div class="clients-register-panel">
-                                    <span class="clients-register-decor"></span>
-                                    <span class="clients-register-number">2</span>
-                                </div>
-                                <div class="clients-register-block">
-                                    <div class="clients-register-name">Записаться по телефону или через электронную почту</div>
-                                    <div class="clients-register-detail">Необходимо сообщить все детали, указанные в направлении для корректного подбора лаборатории, в которой оптимальнее всего сделатьваше исследование.</div>
-                                </div>
-                            </li>
-                            <li class="clients-register-item swiper-slide">
-                                <div class="clients-register-panel">
-                                    <span class="clients-register-decor"></span>
-                                    <span class="clients-register-number">3</span>
-                                </div>
-                                <div class="clients-register-block">
-                                    <div class="clients-register-name">Обязательно предупредите администратора об особенностях</div>
-                                    <div class="clients-register-detail">Необходимо сообщить все детали, указанные в направлении для корректного подбора лаборатории, в которой оптимальнее всего сделать ваше исследование. Прием ведется по предварительной записи.</div>
-                                </div>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-
-                <div class="clients-advantages">
-                    <h2 class="h1">Наши преимущества</h2>
-                    <div class="clients-advantages-list">
-                        <div class="clients-advantages-item">
-                            <div class="clients-advantages-block">
-                                <div class="clients-advantages-name"><svg class="clients-advantages-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.616 21.998V0.398045H13.752V21.998H8.616ZM0.12 13.598V8.79805H22.248V13.598H0.12Z" fill="#FF3560"/>
-                                    </svg>Низкая лучевая нагрузка
-                                </div>
-                                <div class="clients-advantages-detail content">В лабораториях 3Dlab используется оборудование экспертного класса с режимами минимальной лучевой нагрузки для каждого исследования.</div>
                             </div>
-                        </div>
-                        <div class="clients-advantages-item clients-advantages-item_img">
-                            <div class="clients-advantages-block">
-                                <img class="clients-advantages-pic" src="./images/clients/clients-img-2.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="clients-advantages-item">
-                            <div class="clients-advantages-block">
-                                <div class="clients-advantages-name"><svg class="clients-advantages-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.616 21.998V0.398045H13.752V21.998H8.616ZM0.12 13.598V8.79805H22.248V13.598H0.12Z" fill="#FF3560"/>
-                                </svg>Объективная и независимая диагностика
+                        </li>
+                        <li class="doctors-list-item col-lg-6 doctors-list-item_endodontics">
+                            <div class="doctors-list-block">
+                                <div class="doctors-list-box">
+                                    <span class="doctors-list-name">Эндодонтия</span>
+                                    <div class="doctors-list-info content">Точные замеры костной ткани, R-контроль и визуализация всех хирургических этапов, маркировка НЧ канала, печать на плёнке в формате 1:1</div>
                                 </div>
-                                <div class="clients-advantages-detail content">У нас вы с удовольствием проведете время в уютных лабораториях.</div>
-                            </div>
-                        </div>
-                        <div class="clients-advantages-item">
-                            <div class="clients-advantages-block">
-                                <div class="clients-advantages-name"><svg class="clients-advantages-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.616 21.998V0.398045H13.752V21.998H8.616ZM0.12 13.598V8.79805H22.248V13.598H0.12Z" fill="#FF3560"/>
-                                </svg>Использование искусственного интеллекта
+                                <div class="doctors-list-pic">
+                                    <img class="doctors-list-img" src="./images/doctors/doctors-img-3.png" alt="" />
                                 </div>
-                                <div class="clients-advantages-detail content">Мы участвуем в разработке ИИ Diagnocat, используя его в нашей практике для точной  диагностики.</div>
                             </div>
-                        </div>
-                        <div class="clients-advantages-item">
-                            <div class="clients-advantages-block">
-                                <div class="clients-advantages-name"><svg class="clients-advantages-icon" width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M8.616 21.998V0.398045H13.752V21.998H8.616ZM0.12 13.598V8.79805H22.248V13.598H0.12Z" fill="#FF3560"/>
-                                </svg>Комфортные и современные лаборатории
+                        </li>
+                        <li class="doctors-list-item col-lg-6 doctors-list-item_osteopathy">
+                            <div class="doctors-list-block">
+                                <div class="doctors-list-box">
+                                    <span class="doctors-list-name">Остеопатия</span>
+                                    <div class="doctors-list-info content">Весь перечень услуг по анализу и планированию лечения, оценка кортикальной кости, оптимальное соотношения доза/качество/размер</div>
                                 </div>
-                                <div class="clients-advantages-detail content">У нас вы с удовольствием проведете время в уютных лабораториях.</div>
+                                <div class="doctors-list-pic">
+                                    <img class="doctors-list-img" src="./images/doctors/doctors-img-4.png" alt="" />
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="clients-survey">
-                    <h2 class="h1">Комплексные обследования</h2>
-                    <div class="clients-survey-detail">
-                        <div class="clients-survey-info">При планировании большого лечения, в том числе оперативного, необходимо сделать разностороннюю диагностику.</div>
-                        <div class="content">
-                            <p>В Медиком разработаны комплексные исследования под различные клинические задачи и специализации врачей:</p>
-                            <ul>
-                                <li>Пакетные предложения;</li>
-                                <li>Экономия 10%</li>
-                                <li>Все снимки за один визит</li>
+                        </li>
+                        <li class="doctors-list-item col-lg-6 doctors-list-item_bottom">
+                            <div class="doctors-list-block">
+                                <div class="doctors-list-box">
+                                    <span class="doctors-list-name">Оториноларингология</span>
+                                    <div class="doctors-list-info content">Специальное позиционирование пациента для дальнейшей оценки костных структур и оценки кранио-вертебрального взаиморасположения</div>
+                                </div>
+                                <div class="doctors-list-pic">
+                                    <img class="doctors-list-img" src="./images/doctors/doctors-img-5.png" alt="" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="doctors-list-item col-lg-6">
+                            <div class="doctors-list-block">
+                                <div class="doctors-list-box">
+                                    <span class="doctors-list-name">Ортодонтия</span>
+                                    <div class="doctors-list-info content">Весь перечень услуг по анализу и планированию лечения,оценка кортикальной кости, оптимальное соотношения доза/качество/размер</div>
+                                </div>
+                                <div class="doctors-list-pic">
+                                    <img class="doctors-list-img" src="./images/doctors/doctors-img-6.png" alt="" />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="doctors-list-item col-lg-6 doctors-list-item_modified-2">
+                            <div class="doctors-list-block">
+                                <div class="doctors-list-box">
+                                    <span class="doctors-list-name">Имплатнтология</span>
+                                    <div class="doctors-list-info content">Специальное позиционирование пациента для дальнейшей оценки костных структур и оценки кранио-вертебрального взаиморасположения</div>
+                                </div>
+                                <div class="doctors-list-pic">
+                                    <img class="doctors-list-img" src="./images/doctors/doctors-img-7.png" alt="" />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="load-more">
+                        <a class="load-more-link button-modified JS-AjaxMore-Link" href="javascript:;">
+                            <span class="load-more-label">ПОКАЗАТЬ ЕЩЁ</span>
+                            <i class="load-more-icon las la-redo-alt"></i>
+                        </a>
+                        <div class="load-more-pages">
+                            <ul class="pager JS-AjaxMore-Pager">
+                                <li class="pager-item">
+                                    <a class="slider-button slider-button_prev js-slider-prev" href="#">
+                                        <span class="slider-button-icon icon icon_arrow-left"></span>
+                                    </a>
+                                </li>
+                                <li class="pager-item"><a class="pager-link" href="#">1</a></li>
+                                <li class="pager-item pager-item_active"><a class="pager-link" href="#">2</a></li>
+                                <li class="pager-item"><a class="pager-link" href="#">3</a></li>
+                                <li class="pager-item"><a class="pager-link" href="#">...</a></li>
+                                <li class="pager-item"><a class="pager-link" href="#">12</a></li>
+                                <li class="pager-item">
+                                    <a class="slider-button slider-button_next JS-AjaxMore-Next" href="#?PAGEN_2=2">
+                                        <span class="slider-button-icon icon icon_arrow-right"></span>
+                                    </a>
+                                </li>
                             </ul>
                         </div>
-                    </div>
-                    <div class="clients-survey-pic">
-                        <a class="clients-survey-pic-link js-popup" href="https://youtu.be/srepKrsWsbg">
-                            <img class="clients-survey-img" src="./images/clients/clients-img-3.jpg" alt="" />
-                            <span class="clients-survey-pic-icon">
-                                <svg class="clients-survey-pic-icon-1" width="40" height="47" viewBox="0 0 40 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M2.24076e-05 45.2527C1.24925e-05 46.0258 0.839929 46.5065 1.50657 46.1149L38.5324 24.3622C39.1903 23.9757 39.1904 23.0243 38.5324 22.6378L1.50713 0.8851C0.8405 0.493447 0.000590231 0.974126 0.000580316 1.7473L2.24076e-05 45.2527Z" fill="#FF3560"/>
-                                </svg>
-                            </span>
-                        </a>
                     </div>
                 </div>
 
                 <div class="actions actions_modified">
                     <div class="actions-container js-slider-actions">
-                        <!-- Четным добавить класс actions-item_simple -->
+                        <!-- Нечетным добавить класс actions-item_simple -->
                         <ul class="actions-list swiper-wrapper">
-                            <li class="actions-item swiper-slide">
+                            <li class="actions-item actions-item_simple swiper-slide">
                                 <div class="actions-detail">
-                                    <span class="actions-title h1">Акция</span>
-                                    <a class="actions-name" href="#">"Оптом дешевле"</a>
-                                    <div class="actions-info content">Приведи друга и получи скидку 15% для двоих на 3d снимок 2х челюстей.</div>
-                                    <a class="actions-button button js-popup-booking" href="javascript:;" data-src="./ajax/booking-online.html" data-index="id-1">
-                                        ЗАПИСАТЬСЯ<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <span class="actions-title h1"><a href="#">Программа партнёрства</a></span>
+                                    <div class="actions-info content">Оформляя сотрудничество с независимыми центрами «Пикассо», вы получаете круглосуточную поддержку наших специалистов, бесплатное обучение и бонусы программы лояльности.</div>
+                                    <a class="actions-button button" href="#">
+                                        Подробнее<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
                                         <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
                                         </svg></span>
@@ -616,7 +594,7 @@
                                 </div>
                                 <div class="actions-img">
                                     <a class="actions-link" href="#">
-                                        <img class="actions-pic" src="./images/actions/actions-img-4.jpg" alt="" />
+                                        <img class="actions-pic" src="./images/actions/actions-img-5.jpg" alt="" />
                                     </a>
                                 </div>
                                 <div class="actions-decor">
@@ -624,13 +602,12 @@
                                     <div class="actions-decor-2"></div>
                                 </div>
                             </li>
-                            <li class="actions-item actions-item_simple swiper-slide">
+                            <li class="actions-item swiper-slide">
                                 <div class="actions-detail">
-                                    <span class="actions-title h1">Акция</span>
-                                    <a class="actions-name" href="#">"Скидка на повторное"</a>
-                                    <div class="actions-info content">Сделай Компьютерную томографию обеих челюстей и получи скидку 15% на то же исследование для родственников <span class="actions-label">в течение месяца.</span></div>
-                                    <a class="actions-button button js-popup-booking" href="javascript:;" data-src="./ajax/booking-online.html" data-index="id-2">
-                                        ЗАПИСАТЬСЯ<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <span class="actions-title h1"><a href="#">Программа партнёрства</a></span>
+                                    <div class="actions-info content">Оформляя сотрудничество с независимыми центрами «Пикассо», вы получаете круглосуточную поддержку наших специалистов, бесплатное обучение и бонусы программы лояльности.</div>
+                                    <a class="actions-button button" href="#">
+                                        Подробнее<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
                                         <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
                                         </svg></span>
@@ -658,105 +635,157 @@
                     </div>
                 </div>
 
-                <div class="faq">
-                    <h2 class="faq-title h1">Часто задаваемые вопросы</h2>
-                    <ul class="faq-list">
-                        <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
-                            <div class="faq-panel JS-Accordion-Switcher">
-                                <span class="faq-name">Как работает томограф?</span>
-                                <a href="javascript:;" class="faq-link">
-                                    <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
-                                    <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                </a>
-                            </div>
-                            <div class="faq-info content JS-Accordion-Menu">
-                                <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
-                            </div>
-                        </li>
-                        <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
-                            <div class="faq-panel JS-Accordion-Switcher">
-                                <span class="faq-name">Диагностика без очереди, это возможно?</span>
-                                <a href="javascript:;" class="faq-link">
-                                    <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
-                                    <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                </a>
-                            </div>
-                            <div class="faq-info content JS-Accordion-Menu">
-                                <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
-                            </div>
-                        </li>
-                        <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
-                            <div class="faq-panel JS-Accordion-Switcher">
-                                <span class="faq-name">Какие есть рекомендации врачей к подготовке к процедуре?</span>
-                                <a href="javascript:;" class="faq-link">
-                                    <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
-                                    <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                </a>
-                            </div>
-                            <div class="faq-info content JS-Accordion-Menu">
-                                <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
-                            </div>
-                        </li>
-                        <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
-                            <div class="faq-panel JS-Accordion-Switcher">
-                                <span class="faq-name">Что такое телерентгенограмма в прямой проекции (запись на CD + распечатка на фотобумаге)?</span>
-                                <a href="javascript:;" class="faq-link">
-                                    <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
-                                    <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                </a>
-                            </div>
-                            <div class="faq-info content JS-Accordion-Menu">
-                                <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
-                            </div>
-                        </li>
-                        <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
-                            <div class="faq-panel JS-Accordion-Switcher">
-                                <span class="faq-name">Безопасная и безболезненная диагностика с максимально высокой детализацией?</span>
-                                <a href="javascript:;" class="faq-link">
-                                    <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
-                                    <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                </a>
-                            </div>
-                            <div class="faq-info content JS-Accordion-Menu">
-                                <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
-                            </div>
-                        </li>
-                        <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
-                            <div class="faq-panel JS-Accordion-Switcher">
-                                <span class="faq-name">Где можно скачать напрвление на процедуру?</span>
-                                <a href="javascript:;" class="faq-link">
-                                    <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
-                                    <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg>
-                                </a>
-                            </div>
-                            <div class="faq-info content JS-Accordion-Menu">
-                                <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="doctors-advantages">
+                    <h2 class="h1">Почему лучше работать с нами</h2>
+                    <div class="doctors-advantages-container js-slider-doctors-advantages">
+                        <ul class="doctors-advantages-list swiper-wrapper">
+                            <li class="doctors-advantages-item swiper-slide">
+                                <div class="doctors-advantages-panel">
+                                    <span class="doctors-advantages-icon">
+                                        <span class="doctors-advantages-pic">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M34.491 22.5709C34.4596 22.5289 34.4257 22.4897 34.3894 22.4521C33.3429 21.1436 31.4511 20.8807 30.1318 21.8709C28.2306 23.2722 24.9779 25.6301 23.8922 26.4171L19.1498 26.0453L22.0515 25.4101C23.6057 25.184 24.72 23.8126 24.6527 22.1938C24.6523 22.1767 24.6511 22.1595 24.6494 22.1428C24.5147 20.5252 23.2004 19.3057 21.5927 19.3057H12.8172C12.1041 19.3057 11.4388 19.4881 10.8396 19.8477C10.8156 19.8624 10.7919 19.8775 10.7686 19.8938L1.4217 26.4245C0.867428 26.8118 0.731936 27.5755 1.11922 28.1293C1.50615 28.684 2.27023 28.8199 2.82409 28.4317L12.1318 21.9285C12.3392 21.8113 12.5637 21.7537 12.8175 21.7537H21.593C21.9187 21.7537 22.1677 21.9856 22.2069 22.3202C22.2098 22.6149 22.051 22.9423 21.6861 22.988C21.6494 22.9925 21.6126 22.9986 21.5763 23.0068L16.3518 24.1496C15.944 24.239 15.6098 24.5296 15.4649 24.921C15.32 25.3129 15.3844 25.7512 15.6363 26.0843L17.024 27.921C17.2351 28.2005 17.5559 28.3765 17.9053 28.4038L24.1502 28.8936C24.4391 28.9144 24.7285 28.8348 24.9636 28.6646C25.0064 28.6336 29.2804 25.5401 31.5926 23.836C31.8567 23.6381 32.2767 23.7132 32.4901 23.9989C32.5138 24.0303 32.5391 24.0609 32.5656 24.0895C32.7301 24.3585 32.6672 24.7034 32.4065 24.8989L24.1237 31.1419C23.88 31.3244 23.6262 31.3938 23.3359 31.3554L11.2543 29.8452C10.9245 29.804 10.5931 29.8983 10.3343 30.1064L5.72209 33.8211C5.19516 34.2456 5.11227 35.0166 5.53639 35.5431C5.77805 35.8435 6.13271 35.9995 6.49067 35.9995C6.76046 35.9995 7.03187 35.9109 7.25764 35.7293L11.4654 32.3403L23.0218 33.7848C23.9434 33.9076 24.8315 33.6713 25.5944 33.0999L33.8785 26.857C35.229 25.844 35.5037 23.9215 34.491 22.5709Z" fill="white"/>
+                                            <path d="M23.5917 4.24503C22.9153 4.24503 22.3672 4.79318 22.3672 5.46952V12.8165C22.3672 13.4928 22.9153 14.041 23.5917 14.041C24.268 14.041 24.8162 13.4928 24.8162 12.8165V5.46952C24.8162 4.79318 24.268 4.24503 23.5917 4.24503Z" fill="white"/>
+                                            <path d="M27.2648 7.91797H19.9179C19.2415 7.91797 18.6934 8.46612 18.6934 9.14246C18.6934 9.81879 19.2415 10.3669 19.9179 10.3669H27.2648C27.9411 10.3669 28.4893 9.81879 28.4893 9.14246C28.4893 8.46612 27.9411 7.91797 27.2648 7.91797Z" fill="white"/>
+                                            <path d="M23.5917 0C18.5501 0 14.4492 4.10126 14.4492 9.14287C14.4492 14.1845 18.5501 18.2857 23.5917 18.2857C28.6329 18.2857 32.7345 14.1846 32.7345 9.14287C32.7345 4.10119 28.6333 0 23.5917 0ZM23.5917 15.8368C19.9006 15.8368 16.8982 12.8339 16.8982 9.14287C16.8982 5.45182 19.9007 2.44898 23.5917 2.44898C27.2827 2.44898 30.2856 5.45182 30.2856 9.14287C30.2856 12.8339 27.2827 15.8368 23.5917 15.8368Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <div class="doctors-advantages-name">Полные комплексные обследования</div>
+                                </div>
+                                <div class="doctors-advantages-content content">Комплексные обследования помогут получить более полную картину состояния пациента и выбрать оптимальный план лечения</div>
+                            </li>
+                            <li class="doctors-advantages-item swiper-slide">
+                                <div class="doctors-advantages-panel">
+                                    <span class="doctors-advantages-icon">
+                                        <span class="doctors-advantages-pic">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8.75183 4.5L8.55 5.56706L7.25625 12.9499V17.625H7.37786C7.55703 18.8936 7.99467 20.1105 8.6629 21.1981C9.33113 22.2857 10.2153 23.2202 11.2591 23.9421C6.93137 25.8253 3.78694 30.0286 3.41249 35.0009C3.37101 35.5516 3.82272 36 4.375 36H4.96117C5.51397 36 5.95703 35.5505 6.00827 35.0001C6.12278 33.7701 6.45097 32.5676 6.9802 31.449C7.65214 30.0288 8.6309 28.7805 9.84375 27.7969V28.6579L10.2073 29.0687L15.3823 34.3187L16.3125 35.2204L17.2427 34.3187L22.4177 29.0687L22.7812 28.6579V27.7969C23.9941 28.7805 24.9729 30.0288 25.6448 31.449C26.174 32.5676 26.5022 33.7701 26.6167 35.0001C26.668 35.5505 27.111 36 27.6638 36H28.25C28.8023 36 29.254 35.5516 29.2125 35.0009C28.8381 30.0287 25.6936 25.8264 21.3659 23.9408C22.4095 23.219 23.2936 22.2847 23.9619 21.1974C24.6301 20.11 25.0678 18.8934 25.2471 17.625H25.3688V12.9486L24.075 5.56706L23.8732 4.5H8.75183ZM10.9357 7.125H21.6893L22.7812 13.4001V15H9.84375V13.4001L10.9357 7.125ZM15.0188 8.4375V9.75H13.725V12.375H15.0188V13.6875H17.6063V12.375H18.9V9.75H17.6063V8.4375H15.0188ZM9.96536 17.625H22.6596C22.3609 19.1085 21.5658 20.4416 20.409 21.3984C19.2523 22.3552 17.805 22.8769 16.3125 22.875C14.82 22.8769 13.3727 22.3552 12.216 21.3984C11.0592 20.4416 10.2641 19.1085 9.96536 17.625ZM16.3125 25.5C17.6409 25.4929 18.9583 25.7438 20.1938 26.2389V27.5514L16.3125 31.4889L12.4313 27.5514V26.2389C13.6667 25.7438 14.9841 25.4929 16.3125 25.5Z" fill="white"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <div class="doctors-advantages-name">Профессиональные врачи‑рентгенологи</div>
+                                </div>
+                                <div class="doctors-advantages-content content">Наши специалисты проводят обследование по международным стандартам</div>
+                            </li>
+                            <li class="doctors-advantages-item swiper-slide">
+                                <div class="doctors-advantages-panel">
+                                    <span class="doctors-advantages-icon">
+                                        <span class="doctors-advantages-pic">
+                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3.14136 16.6297C3.12338 16.4226 3.14865 16.2141 3.21555 16.0172C3.28246 15.8204 3.38955 15.6396 3.53003 15.4864C3.67051 15.3331 3.84131 15.2108 4.03159 15.127C4.22187 15.0433 4.42748 15 4.63536 15H7.49961C7.89744 15 8.27897 15.158 8.56027 15.4393C8.84158 15.7206 8.99961 16.1022 8.99961 16.5V30.75C8.99961 31.1478 8.84158 31.5294 8.56027 31.8107C8.27897 32.092 7.89744 32.25 7.49961 32.25H5.87511C5.49969 32.2501 5.13787 32.1094 4.86113 31.8557C4.58439 31.602 4.41284 31.2538 4.38036 30.8797L3.14136 16.6297V16.6297ZM13.4996 16.0312C13.4996 15.4042 13.8896 14.8432 14.4559 14.5762C15.6926 13.9927 17.7994 12.8205 18.7496 11.2357C19.9744 9.19275 20.2054 5.502 20.2429 4.65675C20.2481 4.53825 20.2451 4.41975 20.2609 4.30275C20.4641 2.838 23.2909 4.54875 24.3746 6.35775C24.9634 7.33875 25.0384 8.628 24.9769 9.63525C24.9101 10.7122 24.5944 11.7525 24.2846 12.786L23.6246 14.9887H31.7674C31.9991 14.9887 32.2277 15.0424 32.4352 15.1456C32.6428 15.2488 32.8236 15.3986 32.9634 15.5834C33.1033 15.7682 33.1985 15.9829 33.2414 16.2106C33.2844 16.4384 33.274 16.6729 33.2111 16.896L29.1836 31.158C29.0947 31.4725 28.9055 31.7494 28.6447 31.9466C28.384 32.1437 28.066 32.2502 27.7391 32.25H14.9996C14.6018 32.25 14.2203 32.092 13.939 31.8107C13.6577 31.5294 13.4996 31.1478 13.4996 30.75V16.0312Z" stroke="white" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                        </span>
+                                    </span>
+                                    <div class="doctors-advantages-name">Грамотное описание снимков</div>
+                                </div>
+                                <div class="doctors-advantages-content content">Мы даем письменное заключение по выполненному исследованию</div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
-                <div class="entry entry_modified">
+                <div class="doctors-faq">
+                    <div class="faq">
+                        <h2 class="faq-title h1">Часто задаваемые вопросы</h2>
+                        <ul class="faq-list">
+                            <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                                <div class="faq-panel JS-Accordion-Switcher">
+                                    <span class="faq-name">Как работает томограф?</span>
+                                    <a href="javascript:;" class="faq-link">
+                                        <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
+                                        <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    </a>
+                                </div>
+                                <div class="faq-info content JS-Accordion-Menu">
+                                    <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
+                                </div>
+                            </li>
+                            <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                                <div class="faq-panel JS-Accordion-Switcher">
+                                    <span class="faq-name">Диагностика без очереди, это возможно?</span>
+                                    <a href="javascript:;" class="faq-link">
+                                        <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
+                                        <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    </a>
+                                </div>
+                                <div class="faq-info content JS-Accordion-Menu">
+                                    <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
+                                </div>
+                            </li>
+                            <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                                <div class="faq-panel JS-Accordion-Switcher">
+                                    <span class="faq-name">Какие есть рекомендации врачей к подготовке к процедуре?</span>
+                                    <a href="javascript:;" class="faq-link">
+                                        <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
+                                        <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    </a>
+                                </div>
+                                <div class="faq-info content JS-Accordion-Menu">
+                                    <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
+                                </div>
+                            </li>
+                            <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                                <div class="faq-panel JS-Accordion-Switcher">
+                                    <span class="faq-name">Что такое телерентгенограмма в прямой проекции (запись на CD + распечатка на фотобумаге)?</span>
+                                    <a href="javascript:;" class="faq-link">
+                                        <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
+                                        <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    </a>
+                                </div>
+                                <div class="faq-info content JS-Accordion-Menu">
+                                    <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
+                                </div>
+                            </li>
+                            <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                                <div class="faq-panel JS-Accordion-Switcher">
+                                    <span class="faq-name">Безопасная и безболезненная диагностика с максимально высокой детализацией?</span>
+                                    <a href="javascript:;" class="faq-link">
+                                        <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
+                                        <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    </a>
+                                </div>
+                                <div class="faq-info content JS-Accordion-Menu">
+                                    <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
+                                </div>
+                            </li>
+                            <li class="faq-item JS-Accordion" data-accordion="{'classActive': 'faq-item_active'}" data-accordion-id="1">
+                                <div class="faq-panel JS-Accordion-Switcher">
+                                    <span class="faq-name">Где можно скачать напрвление на процедуру?</span>
+                                    <a href="javascript:;" class="faq-link">
+                                        <span class="faq-label">Скрыть</span><svg class="faq-icon" width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0.715263 6C0.882092 6.00039 1.04377 5.93071 1.17223 5.80307L4.9993 1.96717L8.83351 5.66607C8.90654 5.73719 8.99058 5.79031 9.08079 5.82236C9.17099 5.85441 9.26559 5.86476 9.35915 5.85283C9.4527 5.84089 9.54337 5.8069 9.62593 5.75281C9.7085 5.69872 9.78134 5.62559 9.84026 5.53764C9.89957 5.45005 9.94386 5.34928 9.97058 5.24111C9.99731 5.13293 10.0059 5.01949 9.99599 4.9073C9.98604 4.79511 9.9577 4.68638 9.91259 4.58737C9.86748 4.48836 9.8065 4.40101 9.73316 4.33036L5.44912 0.194781C5.32136 0.068846 5.16111 0 4.99573 0C4.83035 0 4.67009 0.068846 4.54233 0.194781L0.2583 4.47591C0.186001 4.54779 0.126236 4.63607 0.0824308 4.73569C0.0386248 4.83531 0.0116377 4.94431 0.00301552 5.05646C-0.00560665 5.16861 0.00430584 5.28169 0.0321836 5.38924C0.0600615 5.49678 0.105357 5.59667 0.165478 5.68319C0.231919 5.78141 0.315681 5.86077 0.410741 5.91554C0.505801 5.97032 0.6098 5.99916 0.715263 6Z" fill="white"/>
+                                        <line x1="5.0498" y1="11.25" x2="5.0498" y2="1.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                    </svg>
+                                    </a>
+                                </div>
+                                <div class="faq-info content JS-Accordion-Menu">
+                                    <p>Томограф Vatech - установка открытого типа, это значит, что процедура проходит в обычном кабинете, где пациент просто занимает удобное.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="entry entry_simple">
                     <div class="entry-img">
                         <div class="entry-img-wrapper">
-                            <img class="entry-pic" src="./images/entry/entry-img.png" alt="" />
+                            <img class="entry-pic" src="./images/entry/entry-img-1.png" alt="" />
                             <svg class="entry-logo"><use xlink:href="#logo-modified"></use></svg>
                         </div>
                     </div>
                     <div class="entry-detail">
-                        <span class="entry-title h1">Запишитесь на обследование онлайн.</span>
+                        <span class="entry-title h1">Запишитесь на мастер-класс онлайн.</span>
                         <form class="js-form-validate js-form">
                             <div class="row">
                                 <div class="field col-lg-6 js-form-validate-field">

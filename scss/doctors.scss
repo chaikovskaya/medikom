@@ -1,0 +1,341 @@
+
+.doctors {
+    margin-bottom: 115px;
+    &-list {
+        margin-bottom: 21px;
+    }
+    &-list-item {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    &-list-block {
+        position: relative;
+        min-height: 300px;
+        padding: 35px 212px 35px 30px;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 4px 60px #EFEFEF;
+    }
+    &-list-name {
+        display: block;
+        margin-bottom: 15px;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 35px;
+        color: #1B1B1B;
+    }
+    &-list-info {
+    }
+    &-list-box {
+    }
+    &-list-pic {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 212px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &-list-img {
+        position: relative;
+        z-index: 1;
+    }
+    &-list-item_endodontics {}
+    &-list-item_endodontics &-list-img {
+        width: 449px;
+        max-width: none;
+    }
+    &-list-item_endodontics &-list-img {
+        right: -154px;
+        position: relative;
+    }
+    &-list-item_endodontics &-list-block {
+        padding-right: 220px;
+    }
+    &-list-item_bottom {}
+    &-list-item_bottom &-list-pic {
+        align-items: flex-end;
+    }
+
+    &-list-item_modified-1 &-list-pic {
+        &:after {
+            content: '';
+            position: absolute;
+            top: -97px;
+            left: 100%;
+            margin-left: -190px;
+            width: 448px;
+            max-width: none;
+            height: 461px;
+            background: url(../images/doctors/doctors-bgr-1.png) no-repeat 0 0;
+        }
+    }
+    &-list-item_modified-1 &-list-img {
+        margin-top: -20px;
+    }
+    &-list-item_modified-2 {}
+    &-list-item_modified-2 &-list-pic {
+        &:after {
+            content: '';
+            position: absolute;
+            top: -72px;
+            left: 100%;
+            margin-left: -216px;
+            width: 448px;
+            max-width: none;
+            height: 461px;
+            background: url(../images/doctors/doctors-bgr-2.png) no-repeat 0 0;
+        }
+    }
+
+    &-faq .faq {
+    }
+
+    @media screen
+    and (max-width: $tablet) {
+        margin-bottom: 60px;
+        &-list {
+            margin-bottom: 10px;
+        }
+        &-list-block {
+            min-height: 160px;
+            padding-top: 22px;
+            padding-bottom: 20px;
+            padding-left: 24px;
+        }
+        &-list-item_modified-1 &-list-pic {
+            &:after {
+                top: -131px;
+                margin-left: -256px;
+                width: 501px;
+                height: 476px;
+                background-image: url(../images/doctors/doctors-bgr-1-tablet.png);
+            }
+        }
+        &-list-item_modified-2 &-list-pic {
+            &:after {
+                top: -45px;
+                margin-left: -180px;
+                width: 351px;
+                height: 258px;
+                background-image: url(../images/doctors/doctors-bgr-2-tablet.png);
+            }
+        }
+        &-list-item_modified-1 &-list-img {
+            margin-top: 5px;
+        }
+        &-list-name {
+            margin-bottom: 10px;
+            font-size: 20px;
+            line-height: 29px;
+        }
+        &-list-item {
+            margin-bottom: 25px;
+        }
+        &-list-item_endodontics &-list-pic {
+            width: 219px;
+        }
+        &-list-item_endodontics &-list-img {
+            right: -28px;
+        }
+
+        &-list-item_osteopathy &-list-img {
+            max-height: none;
+            width: 141px;
+        }
+        &-faq .faq {
+            margin-bottom: 40px;
+        }
+    }
+
+    @media screen
+    and (max-width: $mobile){
+        &-list-block {
+            padding-right: 25px;
+            padding-bottom: 120px;
+        }
+        &-list-pic {
+            top: auto;
+            bottom: 0;
+            width: 180px;
+            height: 135px;
+        }
+        &-list-item_modified-1 &-list-img {
+            margin-top: 0;
+        }
+        &-list-item_endodontics &-list-block {
+            padding-right: 25px;
+            padding-bottom: 115px;
+        }
+        &-list-item_endodontics &-list-pic {
+            height: 102px;
+            &:after {
+                content: '';
+                position: absolute;
+                top: auto;
+                bottom: -239px;
+                left: 100%;
+                margin-left: -193px;
+                width: 381px;
+                max-width: none;
+                height: 339px;
+                background: url(../images/doctors/doctors-endodontics-bgr-1-mob.png) no-repeat 0 0;
+            }
+        }
+        &-list-item_endodontics &-list-img {
+            right: -70px;
+            bottom: 0;
+            width: 244px;
+            max-height: none;
+        }
+        &-list-item_osteopathy &-list-img {
+            width: 110px;
+            bottom: -27px;
+        }
+        &-list-item_modified-1 &-list-pic {
+            &:after {
+                top: auto;
+                bottom: -2px;
+                width: 372px;
+                height: 164px;
+                margin-left: -189px;
+                background-image: url(../images/doctors/doctors-bgr-1-mob.png);
+            }
+        }
+        &-list-item_modified-2 &-list-pic {
+            &:after {
+                top: auto;
+                bottom: -64px;
+                width: 218px;
+                height: 201px;
+                margin-left: -164px;
+                background-image: url(../images/doctors/doctors-bgr-2-mob.png);
+            }
+        }
+        &-list-item_bottom &-list-pic {
+            &:after {
+                content: '';
+                position: absolute;
+                top: auto;
+                bottom: -95px;
+                left: 100%;
+                margin-left: -171px;
+                width: 242px;
+                max-width: none;
+                height: 236px;
+                background: url(../images/doctors/doctors-bottom-bgr-1-mob.png) no-repeat 0 0;
+            }
+        }
+        &-faq .faq {
+            margin-bottom: 13px;
+        }
+    }
+}
+
+.doctors-advantages {
+    margin-bottom: 72px;
+    &-list {
+        display: flex;
+        width: auto;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    &-item {
+        width: 33.3%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    &-panel {
+        display: flex;
+        align-items: center;
+        margin-top: 7px;
+        margin-bottom: 22px;
+    }
+    &-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 73px;
+        width: 73px;
+        height: 73px;
+        margin-right: 27px;
+        background-color: #FF3560;
+        border-radius: 50%;
+    }
+    &-pic {
+        min-width: 36px;
+        width: 36px;
+        line-height: 0;
+    }
+    &-name {
+        font-family: 'Manrope', sans-serif;
+        font-weight: 600;
+        font-size: 22px;
+        line-height: 33px;
+        color: #1B1B1B;
+    }
+    &-content {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &-item:nth-child(2n) &-icon {
+        background-color: #526295;
+    }
+    &-container {}
+
+    @media screen
+    and (max-width: $tablet) {
+        margin-bottom: 40px;
+        &-container {
+            margin-right: 10px;
+        }
+        &-list {
+            display: flex;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        &-item {
+            width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        &-name {
+            font-size: 18px;
+            line-height: 27px;
+        }
+        &-panel {
+            margin-bottom: 14px;
+        }
+        &-icon {
+            min-width: 55px;
+            width: 55px;
+            height: 55px;
+            margin-right: 20px;
+        }
+        &-pic {
+            min-width: 28px;
+            width: 28px;
+            margin-top: -2px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        &-list {
+            flex-direction: column;
+            margin-bottom: 40px;
+        }
+        &-item {
+            margin-bottom: 17px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        &-content {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+}
