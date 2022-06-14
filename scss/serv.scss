@@ -288,6 +288,18 @@
         margin-right: -9%;
     }
 
+    &_news {
+        margin-bottom: 90px;
+    }
+    &_news &-detail {
+        width: 58%;
+        margin-top: -80px;
+    }
+    &_news &-img {
+        width: 42%;
+    }
+    &-text-label {}
+
     @media screen
     and (max-width: $desktop) {
     }
@@ -376,6 +388,15 @@
             margin-bottom: 0;
             max-height: 310px;
         }
+        &_news {
+            margin-bottom: 50px;
+        }
+        &_news &-detail {
+            margin-top: -64px;
+        }
+        &-text-label {
+            display: none;
+        }
     }
 
     @media screen
@@ -462,6 +483,12 @@
         }
         &_center &-img {
             margin-top: 0;
+        }
+        &_news &-detail {
+            margin-top: 0;
+        }
+        &_news &-text {
+            margin-bottom: 0;
         }
     }
 }

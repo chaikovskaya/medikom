@@ -1024,6 +1024,10 @@
         display: block;
     }
 
+    &_simple {
+        margin-bottom: 0;
+    }
+
     /* IE 11 */
     @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         &-detail {
@@ -1104,6 +1108,9 @@
         }
         &_modified &-item.swiper-slide-active &-decor-2 {
             display: none;
+        }
+        &_simple {
+            margin-bottom: 0;
         }
     }
     @media screen
@@ -1195,6 +1202,9 @@
         }
         &-item_simple.swiper-slide-active &-decor-2 {
             display: block;
+        }
+        &_simple {
+            margin-bottom: 0;
         }
     }
 }

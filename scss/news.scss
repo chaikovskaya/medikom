@@ -1,0 +1,25 @@
+
+.news-main {
+    margin-bottom: 115px;
+    &-list {
+        margin-bottom: 25px;
+    }
+    &-item {
+        margin-bottom: 28px;
+    }
+
+    @media screen
+    and (max-width: $tablet) {
+        margin-bottom: 60px;
+        &-list {
+            margin-bottom: 2px;
+        }
+        &-item {
+            margin-bottom: 22px;
+        }
+    }
+
+    @media screen
+    and (max-width: $mobile){
+    }
+}
