@@ -28,7 +28,7 @@ function initMap() {
         elementItem.each(function () {
             var objectId = $(this).data('objectid'),
                 objectCoord = $(this).data('objectcoord'),
-                objectText =  $(this).find('.js-map-item-value').html(),
+                objectText =  $(this).find('.js-map-item-value').html() || "",
                 objectHref =  '';
 
             var elementsObjects =

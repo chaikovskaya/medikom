@@ -289,9 +289,15 @@ blockquote {
 .content {
 	h1, .h1 {
 		margin-top: 47px;
+		&:first-child {
+			margin-top: 0;
+		}
 	}
 	h2, .h2 {
 		margin-top: 47px;
+		&:first-child {
+			margin-top: 0;
+		}
 	}
     b {
 		color: #0D0C0B;
@@ -338,6 +344,7 @@ blockquote {
 
     img {
         height: auto;
+		border-radius: 4px;
     }
 	figcaption {
 		position: relative;
@@ -345,7 +352,6 @@ blockquote {
 		padding: 13px 18px 16px;
 		border: 1px solid #eaeaea;
 		background-color: #fff;
-		font-style: italic;
 		text-align: left;
 		font-style: italic;
 		font-size: 18px;
@@ -504,6 +510,16 @@ blockquote {
 	}
 	&-link:hover &-label {
 		text-decoration: underline;
+	}
+
+	&_simple {
+		margin-bottom: 40px;
+	}
+	&_simple &-label {
+		color: #526295;
+	}
+	&_simple &-icon path {
+		fill: #526295;
 	}
 }
 
@@ -865,6 +881,9 @@ and (max-width: $tablet){
 		ul li {
 			margin-bottom: 19px;
 		}
+		p {
+			margin-bottom: 20px;
+		}
 	}
 }
 
@@ -902,6 +921,9 @@ and (max-width: $mobile){
 		}
 		&_show &-item_more {
 			display: none;
+		}
+		&_simple {
+			margin-bottom: 29px;
 		}
 	}
 }

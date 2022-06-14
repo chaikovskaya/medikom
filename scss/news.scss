@@ -23,3 +23,33 @@
     and (max-width: $mobile){
     }
 }
+
+
+.news-detail {
+    &-container {
+        margin-bottom: 97px;
+    }
+    &-content {
+        margin-bottom: 30px;
+    }
+    &-img {
+        display: block;
+        border-radius: 4px;
+    }
+    @media screen
+    and (max-width: $tablet) {
+        &-container {
+            margin-bottom: 50px;
+        }
+        &-content {
+            margin-bottom: 20px;
+        }
+    }
+    @media screen
+    and (max-width: $mobile){
+        &-img {
+            height: 194px!important;
+            object-fit: cover;
+        }
+    }
+}

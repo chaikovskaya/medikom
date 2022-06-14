@@ -1124,7 +1124,7 @@
             display: none;
         }
         &-item {
-            flex-wrap: wrap;
+            flex-direction: column;
         }
         .swiper-slide-active {
             border-radius: 4px;
@@ -1143,8 +1143,7 @@
         }
         &-pic {
             border-radius: 0;
-            height: auto;
-            object-fit: contain;
+            height: 262px;
         }
         @keyframes animation-actions-1 {
             50% {
@@ -1943,7 +1942,7 @@
             width: 51%;
         }
         &-img-wrapper {
-            width: 360px;
+            width: 318px;
             min-height: 378px;
             margin-top: -14px;
             margin-left: auto;
@@ -1975,6 +1974,14 @@
         }
         &_simple &-logo {
             right: 216px;
+        }
+        &_simple &-pic {
+            max-width: 250px;
+            margin-right: -10px;
+        }
+        &_simple &-logo {
+            top: 146px;
+            right: 220px;
         }
         &-title {
             margin-bottom: 27px;
@@ -2031,7 +2038,8 @@
             height: 170px;
         }
         &_simple &-logo {
-            right: 198px;
+            top: 103px;
+            right: 189px;
         }
         &_simple &-pic {
             max-width: 217px;

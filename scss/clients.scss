@@ -154,7 +154,7 @@
     margin-bottom: 103px;
     &-list {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: 34.2% 26.4% 34.2%;
         grid-column-gap: 30px;
         grid-row-gap: 30px;
     }
@@ -184,6 +184,11 @@
             margin-bottom: 0;
         }
     }
+    &-item_img &-block {
+        &:hover {
+            background-color: transparent;
+        }
+    }
     &-name {
         margin-bottom: 17px;
         font-family: 'Manrope', sans-serif;
@@ -203,6 +208,8 @@
     &-pic {
         display: block;
         width: 100%;
+        min-height: 100%;
+        object-fit: cover;
     }
     &-item_img &-block {
         padding: 0;
