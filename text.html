@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Учебный центр. Детально. Медиком</title>
+    <title>Типовая текстовая. Медиком</title>
 
     <link rel="stylesheet" href="./libs/fancybox/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css" />
@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="./css/common.css" />
  </head>
 
-<body>
+<!-- Добавить этот класс только страницам: Новости деальная, Контакты, Типовая страница -->
+<body class="page-inner">
     <div class="svg-box">
         <svg id="logo"  viewBox="0 0 186 46" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4.70221 20.3145C3.74297 10.4209 11.868 0.30641 21.9883 0.0157312C25.0619 -0.113183 28.1169 0.551964 30.8587 1.94702C25.1474 0.114575 18.4002 0.416881 13.5726 4.27245C8.8438 8.12802 5.47658 14.3346 6.38932 20.5505C5.08591 22.5341 2.70234 23.5282 1.60823 25.6513C0.957105 27.1001 1.84076 28.507 2.5442 29.7348C1.06639 32.2242 2.82326 34.7601 3.43368 37.2145C3.8697 39.3435 2.68373 42.0305 4.5964 43.6537C5.41866 44.4102 6.43947 44.9167 7.53924 45.114C6.82998 45.0385 6.11375 44.9687 5.4045 44.9106C4.15104 44.2036 3.1814 43.084 2.66071 41.7425C2.14003 40.4009 2.10051 38.9203 2.54887 37.5529C1.47336 35.1275 0.199015 32.5625 0.879204 29.8348C0.0617556 28.4733 -0.198573 26.8489 0.152506 25.3002C0.874553 23.0364 3.10813 21.8841 4.70221 20.3145Z" fill="#FF3560"/>
@@ -440,146 +441,134 @@
         </header>
 
         <main class="main-content">
-
-            <div class="main-info main-info_modified main-info_simple main-info_center">
-                <div class="main-info-container container">
-                    <div class="breadcrumbs js-expand" data-expand="{
-                        'classActive': 'breadcrumbs_active',
-                        'classShow': 'breadcrumbs_show'
-                    }">
-                        <ul class="breadcrumbs-list js-expand-block">
-                            <li class="breadcrumbs-item">
-                                <a class="breadcrumbs-link" href="/">
-                                    <span class="breadcrumbs-label">Главная</span><svg class="breadcrumbs-icon" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.90735e-06 0.607974C-0.000324249 0.749778 0.0577388 0.887202 0.164112 0.996392L3.36069 4.2494L0.278275 7.50848C0.219006 7.57056 0.174746 7.64199 0.148037 7.71867C0.121329 7.79534 0.1127 7.87575 0.122645 7.95528C0.132591 8.0348 0.160916 8.11186 0.205992 8.18204C0.251068 8.25222 0.312006 8.31414 0.385303 8.36422C0.458288 8.41463 0.542267 8.45228 0.632413 8.475C0.722559 8.49771 0.817094 8.50505 0.910586 8.49659C1.00408 8.48813 1.09468 8.46404 1.17719 8.4257C1.2597 8.38736 1.33249 8.33553 1.39137 8.27318L4.83768 4.63175C4.94263 4.52316 5 4.38694 5 4.24637C5 4.10579 4.94263 3.96958 4.83768 3.86098L1.27007 0.219555C1.21017 0.1581 1.13661 0.107302 1.05359 0.0700665C0.970575 0.0328312 0.879737 0.00989246 0.786283 0.00256348C0.692828 -0.00476551 0.598591 0.0036602 0.508971 0.0273561C0.41935 0.0510521 0.336105 0.0895538 0.264005 0.140656C0.182155 0.197131 0.116029 0.268329 0.0703816 0.34913C0.0247345 0.429931 0.000698566 0.51833 1.90735e-06 0.607974Z" fill="#1B1B1B"/>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="breadcrumbs-item">
-                                <a class="breadcrumbs-link" href="#">
-                                    <span class="breadcrumbs-label">Врачам</span><svg class="breadcrumbs-icon" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.90735e-06 0.607974C-0.000324249 0.749778 0.0577388 0.887202 0.164112 0.996392L3.36069 4.2494L0.278275 7.50848C0.219006 7.57056 0.174746 7.64199 0.148037 7.71867C0.121329 7.79534 0.1127 7.87575 0.122645 7.95528C0.132591 8.0348 0.160916 8.11186 0.205992 8.18204C0.251068 8.25222 0.312006 8.31414 0.385303 8.36422C0.458288 8.41463 0.542267 8.45228 0.632413 8.475C0.722559 8.49771 0.817094 8.50505 0.910586 8.49659C1.00408 8.48813 1.09468 8.46404 1.17719 8.4257C1.2597 8.38736 1.33249 8.33553 1.39137 8.27318L4.83768 4.63175C4.94263 4.52316 5 4.38694 5 4.24637C5 4.10579 4.94263 3.96958 4.83768 3.86098L1.27007 0.219555C1.21017 0.1581 1.13661 0.107302 1.05359 0.0700665C0.970575 0.0328312 0.879737 0.00989246 0.786283 0.00256348C0.692828 -0.00476551 0.598591 0.0036602 0.508971 0.0273561C0.41935 0.0510521 0.336105 0.0895538 0.264005 0.140656C0.182155 0.197131 0.116029 0.268329 0.0703816 0.34913C0.0247345 0.429931 0.000698566 0.51833 1.90735e-06 0.607974Z" fill="#1B1B1B"/>
-                                </svg>
-                                </a>
-                            </li>
-                            <li class="breadcrumbs-item">
-                                <span class="breadcrumbs-label">Групповые мастер-классы</span>
-                            </li>
-                            <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
-                        </ul>
-                    </div>
-
-                    <div class="main-info-detail">
-                        <h1 class="main-info-title">Групповые мастер-классы</h1>
-                        <div class="main-info-text">КЛКТ челюстей — это все необходимые сечения (аксиальные, кросс-секции, панорамные реформаты) для получения полного представления:</div>
-                        <div class="main-info-panel">
-                            <a class="button js-popup-booking" href="javascript:;" data-src="./ajax/booking-online.html" data-index="id-1">
-                                ЗАПИСАТЬСЯ<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
-                                <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
-                                </svg></span>
+            <div class="container">
+                <div class="breadcrumbs breadcrumbs_simple js-expand" data-expand="{
+                            'classActive': 'breadcrumbs_active',
+                            'classShow': 'breadcrumbs_show'
+                        }">
+                    <ul class="breadcrumbs-list js-expand-block">
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link" href="/">
+                                <span class="breadcrumbs-label">Главная</span><svg class="breadcrumbs-icon" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.90735e-06 0.607974C-0.000324249 0.749778 0.0577388 0.887202 0.164112 0.996392L3.36069 4.2494L0.278275 7.50848C0.219006 7.57056 0.174746 7.64199 0.148037 7.71867C0.121329 7.79534 0.1127 7.87575 0.122645 7.95528C0.132591 8.0348 0.160916 8.11186 0.205992 8.18204C0.251068 8.25222 0.312006 8.31414 0.385303 8.36422C0.458288 8.41463 0.542267 8.45228 0.632413 8.475C0.722559 8.49771 0.817094 8.50505 0.910586 8.49659C1.00408 8.48813 1.09468 8.46404 1.17719 8.4257C1.2597 8.38736 1.33249 8.33553 1.39137 8.27318L4.83768 4.63175C4.94263 4.52316 5 4.38694 5 4.24637C5 4.10579 4.94263 3.96958 4.83768 3.86098L1.27007 0.219555C1.21017 0.1581 1.13661 0.107302 1.05359 0.0700665C0.970575 0.0328312 0.879737 0.00989246 0.786283 0.00256348C0.692828 -0.00476551 0.598591 0.0036602 0.508971 0.0273561C0.41935 0.0510521 0.336105 0.0895538 0.264005 0.140656C0.182155 0.197131 0.116029 0.268329 0.0703816 0.34913C0.0247345 0.429931 0.000698566 0.51833 1.90735e-06 0.607974Z" fill="#1B1B1B"/>
+                            </svg>
                             </a>
-                        </div>
-                    </div>
-                    <div class="main-info-img">
-                        <img class="main-info-pic" src="./images/center-detail/center-detail-img-1.png" alt="" />
-                    </div>
-
-                    <div class="main-info-decor-1"></div>
-                    <div class="main-info-decor-2"></div>
-                    <div class="main-info-decor-3"></div>
-                    <div class="main-info-decor-4"></div>
-                    <div class="main-info-decor-5"></div>
-                    <div class="main-info-decor-6"></div>
-                    <div class="main-info-decor-7"></div>
+                        </li>
+                        <li class="breadcrumbs-item">
+                            <a class="breadcrumbs-link" href="#">
+                                <span class="breadcrumbs-label">Новости</span><svg class="breadcrumbs-icon" width="5" height="9" viewBox="0 0 5 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.90735e-06 0.607974C-0.000324249 0.749778 0.0577388 0.887202 0.164112 0.996392L3.36069 4.2494L0.278275 7.50848C0.219006 7.57056 0.174746 7.64199 0.148037 7.71867C0.121329 7.79534 0.1127 7.87575 0.122645 7.95528C0.132591 8.0348 0.160916 8.11186 0.205992 8.18204C0.251068 8.25222 0.312006 8.31414 0.385303 8.36422C0.458288 8.41463 0.542267 8.45228 0.632413 8.475C0.722559 8.49771 0.817094 8.50505 0.910586 8.49659C1.00408 8.48813 1.09468 8.46404 1.17719 8.4257C1.2597 8.38736 1.33249 8.33553 1.39137 8.27318L4.83768 4.63175C4.94263 4.52316 5 4.38694 5 4.24637C5 4.10579 4.94263 3.96958 4.83768 3.86098L1.27007 0.219555C1.21017 0.1581 1.13661 0.107302 1.05359 0.0700665C0.970575 0.0328312 0.879737 0.00989246 0.786283 0.00256348C0.692828 -0.00476551 0.598591 0.0036602 0.508971 0.0273561C0.41935 0.0510521 0.336105 0.0895538 0.264005 0.140656C0.182155 0.197131 0.116029 0.268329 0.0703816 0.34913C0.0247345 0.429931 0.000698566 0.51833 1.90735e-06 0.607974Z" fill="#1B1B1B"/>
+                            </svg>
+                            </a>
+                        </li>
+                        <li class="breadcrumbs-item">
+                            <span class="breadcrumbs-label">Новости подробно</span>
+                        </li>
+                        <li class="breadcrumbs-item breadcrumbs-item_more"><a class="breadcrumbs-link js-expand-link" href="javascript:;">...</a></li>
+                    </ul>
                 </div>
             </div>
 
             <div class="container">
 
-                <div class="center-detail">
-                    <h2 class="h1">Описание курса</h2>
-                    <div class="center-detail-list">
-                        <div class="center-detail-list-row row">
-                            <div class="center-detail-list-col center-detail-list-col_img col-md-6 col-lg-4">
-                                <img class="center-detail-list-img" src="./images/center-detail/center-detail-list-img-1.jpg" alt="" />
-                            </div>
-                            <div class="center-detail-list-col center-detail-list-col_title col-lg-4">
-                                <span class="center-detail-list-title h2">Описание ортопантомограммы</span>
-                                <div class="center-detail-list-info">1 тема мастер-класса</div>
-                            </div>
-                            <div class="center-detail-list-col center-detail-list-col_info col-md-6 col-lg-4 content">
-                                <p>Id malesuada dignissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus neque enim, fermentum turpis vel malesuada cursus facilisis ipsum, pellentesque molestie felisId malesuada dignissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus neque enim, fermentum turpis vel malesuada cursus facilisis ipsum, pellentesque molestie felisissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus enim, fermentum turpis vel malesuada</p>
-                            </div>
-                        </div>
-                        <div class="center-detail-list-row row">
-                            <div class="center-detail-list-col center-detail-list-col_img col-md-6 col-lg-4">
-                                <img class="center-detail-list-img" src="./images/center-detail/center-detail-list-img-2.jpg" alt="" />
-                            </div>
-                            <div class="center-detail-list-col center-detail-list-col_title col-lg-4">
-                                <span class="center-detail-list-title h2">ТРГ в боковой проекции + ТРГ в прямой проекции</span>
-                                <div class="center-detail-list-info">2 тема мастер-класса</div>
-                            </div>
-                            <div class="center-detail-list-col center-detail-list-col_info col-md-6 col-lg-4 content">
-                                <p>Id malesuada dignissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus neque enim, fermentum turpis vel malesuada cursus facilisis ipsum, pellentesqu e molestie felisId malesuada dignissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus neque enim, fermentum turpis vel malesuada cursus facilisis ipsum, pellentesque molestie felisissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus neque enim, fermentum turpis vel mal</p>
-                            </div>
-                        </div>
-                        <div class="center-detail-list-row row">
-                            <div class="center-detail-list-col center-detail-list-col_img col-md-6 col-lg-4">
-                                <img class="center-detail-list-img" src="./images/center-detail/center-detail-list-img-3.jpg" alt="" />
-                            </div>
-                            <div class="center-detail-list-col center-detail-list-col_title col-lg-4">
-                                <span class="center-detail-list-title h2">Описание ортопантомограммы</span>
-                                <div class="center-detail-list-info">3 тема мастер-класса</div>
-                            </div>
-                            <div class="center-detail-list-col center-detail-list-col_info col-md-6 col-lg-4 content">
-                                <p>Id malesuada dignissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus neque enim, fermentum turpis vel malesuada cursus facilisis ipsum, pellentesque molestie felisId malesuada dignissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus neque enim, fermentum turpis vel malesuada cursus facilisis ipsum, pellentesque molestie felisissim ut eget orci pharetra sit varius condimentum feugiat malesuada lacus enim, fermentum turpis vel malesuada</p>
-                            </div>
-                        </div>
+                <div class="text-content content">
+                    <h2>Открыта запись на 6 апреля 2020 г</h2>
+                    <p>Исследование зубов проводится менее одной минуты и абсолютно безболезненно. Этот метод предполагает использование конусного пучка лучей для диагностики исследуемой области. Следует сразу отметить, что лучевая нагрузка в наших центрах сведена к минимуму, о чем говорят цифры по окончанию исследования. Все это становится возможным за счет новейшего оборудования и программно-аппаратных комплексов, которые снижают лучевую нагрузку до биологически обусловленных минимумов.</p>
+                    <div class="text-pic">
+                        <a class="text-pic-link js-popup" href="https://youtu.be/srepKrsWsbg">
+                            <img class="text-img" src="./images/clients/clients-img-3.jpg" alt="" />
+                            <span class="text-pic-icon">
+                                <svg class="text-pic-icon-1" width="40" height="47" viewBox="0 0 40 47" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M2.24076e-05 45.2527C1.24925e-05 46.0258 0.839929 46.5065 1.50657 46.1149L38.5324 24.3622C39.1903 23.9757 39.1904 23.0243 38.5324 22.6378L1.50713 0.8851C0.8405 0.493447 0.000590231 0.974126 0.000580316 1.7473L2.24076e-05 45.2527Z" fill="#FF3560"/>
+                                </svg>
+                            </span>
+                        </a>
                     </div>
+                    <h2 class="text-title">Время проведения процедуры</h2>
+                    <ul>
+                        <li>Время проведения самого исследования — 30–40 секунд.</li>
+                        <li>Время на заполнение медицинской документации, оплату, выдача результатов и другое — 15–30 минут (время зависит от сложности и комбинации назначенных исследований).</li>
+                        <li>Нет необходиомсоти в предварительной подготовке.</li>
+                        <li>Время подготовки предварительного заключения.</li>
+                    </ul>
+                    <h2>Опасен ли метод КЛКТ исследования?</h2>
+                    <p>Как как этот метод подразумевает использование рентгеновских лучей, многие переживают, что такая диагностика может принести вред здоровью. Это совершенно неоправданные опасения. За счет современного оборудования и программно-аппаратных комплексов лучевая нагрузка очень низкая и является биологически обусловленной. Этот метод не навредит вашему здоровью и может проводиться даже несколько раз в год. Абсолютно все исследования проводятся под.</p>
+                    <img class="text-img-left" src="./images/img/text-img-1.jpg" alt="" />
+                    <p>Как как этот метод подразумевает использование рентгеновских лучей, многие переживают, что такая диагностика может принести вред здоровью. Это совершенно неоправданные опасения. За счет современного оборудования и программно-аппаратных комплексов лучевая нагрузка очень низкая и является биологически обусловленной. Этот метод не навредит вашему здоровью и может проводиться даже несколько раз в год. Абсолютно все исследования проводятся под.</p>
+                    <ul>
+                        <li>Время на заполнение медицинской документации, оплату, выдача результатов и другое — 15–30 минут</li>
+                        <li>Нет необходиомсоти в предварительной подготовке.</li>
+                        <li>Время подготовки предварительного заключения.</li>
+                    </ul>
+                    <h2 class="text-title">Опасен ли метод КЛКТ исследования?</h2>
+                    <p>Как как этот метод подразумевает использование рентгеновских лучей, многие переживают, что такая диагностика может принести вред здоровью. Это совершенно неоправданные опасения. За счет современного оборудования и программно-аппаратных комплексов лучевая нагрузка очень низкая и является биологически обусловленной. Этот метод не навредит вашему здоровью и может проводиться даже несколько раз в год. Абсолютно все исследования проводятся под.</p>
+                    <h2>Открыта запись на 6 апреля 2020 г</h2>
+                    <p>Исследование зубов проводится менее одной минуты и абсолютно безболезненно. Этот метод предполагает использование конусного пучка лучей для диагностики исследуемой области. Следует сразу отметить, что лучевая нагрузка в наших центрах сведена к минимуму, о чем говорят цифры по окончанию исследования. Все это становится возможным за счет новейшего оборудования и программно-аппаратных комплексов, которые снижают лучевую нагрузку до биологически обусловленных минимумов.</p>
+                    <img class="text-img-right" src="./images/img/text-img-1.jpg" alt="" />
+                    <p>Как как этот метод подразумевает использование рентгеновских лучей, многие переживают, что такая диагностика может принести вред здоровью. Это совершенно неоправданные опасения. За счет современного оборудования и программно-аппаратных комплексов лучевая нагрузка очень низкая и является биологически обусловленной. Этот метод не навредит вашему здоровью и может проводиться даже несколько раз в год. Абсолютно все исследования проводятся под.</p>
+                    <ul>
+                        <li>Время на заполнение медицинской документации, оплату, выдача результатов и другое — 15–30 минут</li>
+                        <li>Нет необходиомсоти в предварительной подготовке.</li>
+                        <li>Время подготовки предварительного заключения.</li>
+                    </ul>
                 </div>
 
-                <div class="entry entry_simple">
-                    <div class="entry-img">
-                        <div class="entry-img-wrapper">
-                            <img class="entry-pic" src="./images/entry/entry-img-1.png" alt="" />
-                            <svg class="entry-logo"><use xlink:href="#logo-modified"></use></svg>
+                <!-- Добавить 2 класса: actions_modified actions_simple -->
+                <div class="actions actions_modified actions_simple">
+                    <div class="actions-container js-slider-actions">
+                        <!-- Нечетным добавить класс actions-item_simple -->
+                        <ul class="actions-list swiper-wrapper">
+                            <li class="actions-item actions-item_simple swiper-slide">
+                                <div class="actions-detail">
+                                    <span class="actions-title h1"><a href="#">Программа партнёрства</a></span>
+                                    <div class="actions-info content">Оформляя сотрудничество с независимыми центрами «Пикассо», вы получаете круглосуточную поддержку наших специалистов, бесплатное обучение и бонусы программы лояльности.</div>
+                                    <a class="actions-button button" href="#">
+                                        Подробнее<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
+                                        <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg></span>
+                                    </a>
+                                </div>
+                                <div class="actions-img">
+                                    <a class="actions-link" href="#">
+                                        <img class="actions-pic" src="./images/actions/actions-img-6.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="actions-decor">
+                                    <div class="actions-decor-1"></div>
+                                    <div class="actions-decor-2"></div>
+                                </div>
+                            </li>
+                            <li class="actions-item swiper-slide">
+                                <div class="actions-detail">
+                                    <span class="actions-title h1"><a href="#">Программа партнёрства</a></span>
+                                    <div class="actions-info content">Оформляя сотрудничество с независимыми центрами «Пикассо», вы получаете круглосуточную поддержку наших специалистов, бесплатное обучение и бонусы программы лояльности.</div>
+                                    <a class="actions-button button" href="#">
+                                        Подробнее<span class="actions-button-icon button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
+                                        <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg></span>
+                                    </a>
+                                </div>
+                                <div class="actions-img">
+                                    <a class="actions-link" href="#">
+                                        <img class="actions-pic" src="./images/actions/actions-img-2.jpg" alt="" />
+                                    </a>
+                                </div>
+                                <div class="actions-decor">
+                                    <div class="actions-decor-1"></div>
+                                    <div class="actions-decor-2"></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <div class="actions-panel slider-panel">
+                            <div class="slider-nav">
+                                <div class="slider-button slider-button_prev js-slider-prev"></div>
+                                <div class="slider-button slider-button_next js-slider-next"></div>
+                            </div>
+                            <div class="js-slider-pagination"></div>
                         </div>
-                    </div>
-                    <div class="entry-detail">
-                        <span class="entry-title h1">Запишитесь на мастер-класс онлайн.</span>
-                        <form class="js-form-validate js-form">
-                            <div class="row">
-                                <div class="field col-lg-6 js-form-validate-field">
-                                    <input class="input" type="text" placeholder="Ваше имя" name="name-1" />
-                                </div>
-                                <div class="field col-lg-6 js-form-validate-field">
-                                    <input class="input js-mask-phone" type="text" placeholder="Ваш телефон" name="phone-1" required />
-                                </div>
-                            </div>
-                            <div class="field field_simple">
-                                <select name="products-sort" class="js-select">
-                                    <option selected>Выберите вид исследования</option>
-                                    <option value="id-1">КЛКТ сегмента</option>
-                                    <option value="id-2">КЛКТ челюстей</option>
-                                </select>
-                            </div>
-                            <div class="field field_simple">
-                                <label class="switch">
-                                    <input class="switch-checkbox js-form-checkbox" type="checkbox" name="notifications" checked="checked" />
-                                    <span class="switch-decor">
-                                        <span class="switch-icon"></span>
-                                    </span>
-                                    <span class="switch-label">Я согласен на обработку персональных данных</span>
-                                </label>
-                            </div>
-                            <button class="button js-form-button">
-                                ЗАПИСАТЬСЯ<span class="button-icon"><svg width="13" height="10" viewBox="0 0 13 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7 0.715263C6.99961 0.882092 7.06929 1.04377 7.19693 1.17223L11.0328 4.9993L7.33393 8.83351C7.26281 8.90654 7.20969 8.99058 7.17764 9.08079C7.14559 9.17099 7.13524 9.26559 7.14717 9.35915C7.15911 9.4527 7.1931 9.54337 7.24719 9.62593C7.30128 9.7085 7.37441 9.78134 7.46236 9.84026C7.54995 9.89957 7.65072 9.94386 7.75889 9.97058C7.86707 9.99731 7.98051 10.0059 8.0927 9.99599C8.20489 9.98604 8.31362 9.9577 8.41263 9.91259C8.51164 9.86748 8.59899 9.8065 8.66964 9.73316L12.8052 5.44912C12.9312 5.32136 13 5.16111 13 4.99573C13 4.83035 12.9312 4.67009 12.8052 4.54233L8.52409 0.2583C8.45221 0.186001 8.36393 0.126236 8.26431 0.0824308C8.16469 0.0386248 8.05569 0.0116377 7.94354 0.00301552C7.83139 -0.00560665 7.71831 0.00430584 7.61076 0.0321836C7.50322 0.0600615 7.40333 0.105357 7.31681 0.165478C7.21859 0.231919 7.13923 0.315681 7.08446 0.410741C7.02968 0.505801 7.00084 0.6098 7 0.715263Z" fill="#FF3560"/>
-        <line x1="0.75" y1="5.05005" x2="10.25" y2="5.05005" stroke="#FF3560" stroke-width="1.5" stroke-linecap="round"/>
-        </svg></span>
-                            </button>
-                        </form>
                     </div>
                 </div>
 

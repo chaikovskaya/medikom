@@ -475,7 +475,7 @@ function initAjaxMore() {
         }
     };
 
-    $('.JS-AjaxMore').not('.JS-AjaxMore-ready').each(function(){
+    $('.JS-AjaxMore').each(function(){
         var local = GLOBAL.parseData(jQuery(this).data('ajaxmore'));
         new AjaxMore(this, jQuery.extend({}, common, local));
     });

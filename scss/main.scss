@@ -877,6 +877,7 @@
     &-img {
         width: 46.6%;
         margin-left: auto;
+        background-color: #fff;
     }
     &-pic {
         display: block;
@@ -1125,6 +1126,7 @@
         }
         &-item {
             flex-direction: column;
+            overflow: hidden;
         }
         .swiper-slide-active {
             border-radius: 4px;
@@ -1142,8 +1144,29 @@
             margin-left: 0;
         }
         &-pic {
-            border-radius: 0;
             height: 262px;
+            border-radius: 0;
+        }
+        &-link {
+            position: relative;
+            &:before {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 4px;
+                height: 4px;
+                background: url("../images/actions/actions-decor-bgr-1.png") no-repeat 0 0;
+            }
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 4px;
+                height: 4px;
+                background: url("../images/actions/actions-decor-bgr-2.png") no-repeat 0 0;
+            }
         }
         @keyframes animation-actions-1 {
             50% {
@@ -1603,11 +1626,14 @@
     &-short-img {
         min-width: 126px;
         width: 126px;
+        height: 90px;
         padding-right: 16px;
     }
     &-short-pic {
         display: block;
         width: 100%;
+        height: 100%;
+        object-fit: cover;
         border-radius: 4px;
     }
     &-short-block {
@@ -1707,11 +1733,13 @@
         &-short-img {
             display: block;
             width: 100%;
+            height: auto;
             padding-right: 0;
         }
         &-short-pic {
             display: block;
             width: 100%;
+            height: auto;
         }
         &-short-link:hover &-short-pic {
             border-radius: 4px 4px 0 0;
@@ -2061,6 +2089,7 @@
         position: relative;
         z-index: 1;
         width: 43%;
+        min-height: 307px;
         padding-right: $gutters;
     }
     &-info {
@@ -2073,7 +2102,6 @@
     &-list-item {
         margin-bottom: -1px;
         padding: 0 15px;
-        cursor: pointer;
         &:hover {
             position: relative;
             background-color: #fff;
@@ -2105,7 +2133,6 @@
         letter-spacing: -0.01em;
     }
     &-working-mode {
-        font-family: 'Lato', sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 18px;
@@ -2200,25 +2227,26 @@
     }
     @media screen
     and (max-width: $mobile){
-       &-title {
-           margin-bottom: 18px;
-       }
-       &-block {
-           width: 100%;
-           margin-bottom: 30px;
-       }
-       &-list-item {
-           padding-right: $gutter;
-       }
-       &-box {
-           min-height: 145px;
-           padding-top: 19px;
-           padding-bottom: 14px;
-           padding-right: 0;
-       }
-       &-info {
-           padding-right: 10px;
-       }
+        &-title {
+            margin-bottom: 18px;
+        }
+        &-block {
+            width: 100%;
+            min-height: auto;
+            margin-bottom: 30px;
+        }
+        &-list-item {
+            padding-right: $gutter;
+        }
+        &-box {
+            min-height: 145px;
+            padding-top: 19px;
+            padding-bottom: 14px;
+            padding-right: 0;
+        }
+        &-info {
+            padding-right: 10px;
+        }
         &-map-inner {
             border-radius: 4px;
             margin-left: 0;

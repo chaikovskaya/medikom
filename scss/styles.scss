@@ -254,7 +254,7 @@ blockquote {
 	background-color: transparent;
 }
 .simplebar-scrollbar:before {
-	background-color: $color;
+	background-color: gray;
 }
 .simplebar-scrollbar.simplebar-visible:before {
 	opacity: 1;
@@ -478,7 +478,7 @@ blockquote {
 		z-index: 1;
 		margin-right: 0;
 		padding-right: 5px;
-		padding-left: 5px;
+		padding-left: 8px;
 		display: none;
 		background-color: #526295;
 	}
@@ -790,6 +790,56 @@ blockquote {
 	}
 }
 
+.text {
+	&-content {
+		margin-bottom: 120px;
+	}
+	&-pic {
+		margin-bottom: 30px;
+	}
+	&-pic-link {
+		display: block;
+		position: relative;
+	}
+	&-img {
+		display: block;
+		width: 100%;
+		border-radius: 4px;
+		overflow: hidden;
+		filter: grayscale(1);
+	}
+	&-pic-icon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 159px;
+		height: 159px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: url("../images/clients/clients-video-bgr.png") no-repeat 0 0;
+		background-size: 100% auto;
+	}
+	&-pic-icon-1 {
+		margin-right: -8px;
+	}
+	&-img-left {
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 20px;
+	}
+	&-img-right {
+		float: right;
+		margin-left: 30px;
+		margin-bottom: 20px;
+	}
+	&-title {
+		margin-top: 0!important;
+	}
+}
+
 @media screen
 and (max-width: $desktop){
 }
@@ -885,6 +935,31 @@ and (max-width: $tablet){
 			margin-bottom: 20px;
 		}
 	}
+	.text {
+		&-content {
+			margin-bottom: 70px;
+		}
+		&-img {
+			object-fit: cover;
+			min-height: 234px;
+		}
+		&-pic-icon {
+			width: 93px;
+			height: 93px;
+		}
+		&-pic-icon-1 {
+			width: 23px;
+			height: 28px;
+		}
+		&-img-left {
+			float: none;
+			margin-right: 0;
+		}
+		&-img-right {
+			float: none;
+			margin-left: 0;
+		}
+	}
 }
 
 @media screen
@@ -924,6 +999,19 @@ and (max-width: $mobile){
 		}
 		&_simple {
 			margin-bottom: 29px;
+		}
+	}
+	.text {
+		&-img {
+			min-height: 180px;
+		}
+		&-pic-icon {
+			width: 71px;
+			height: 71px;
+		}
+		&-pic-icon-1 {
+			width: 18px;
+			height: 22px;
 		}
 	}
 }

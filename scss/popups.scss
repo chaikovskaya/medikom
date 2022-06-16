@@ -5,7 +5,7 @@
 }
 
 .fancybox-slide {
-    padding: 15px;
+    padding: 30px 40px;
 }
 
 .fancybox-slide--html {
@@ -268,6 +268,9 @@ and (max-width: $tablet){
             width: 103px;
         }
     }
+    .fancybox-slide {
+        padding: 20px;
+    }
     .fancybox-close {
         top: 20px;
         left: auto;
@@ -284,4 +287,10 @@ and (max-width: $tablet){
 
 @media screen
 and (max-width: $mobile){
+    .fancybox-slide {
+        padding: 15px;
+    }
+    .map-popup {
+        max-width: 190px;
+    }
 }

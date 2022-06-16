@@ -126,7 +126,6 @@
             bottom: -159px;
             right: -51px;
             width: 511px;
-            max-width: none;
             height: 503px;
             background: url("../images/center/center-bgr-1.png") no-repeat 0 0;
             background-size: 100% auto;
@@ -139,7 +138,6 @@
             bottom: -159px;
             right: -51px;
             width: 511px;
-            max-width: none;
             height: 503px;
             background: url("../images/center/center-bgr-2.png") no-repeat 0 0;
             background-size: 100% auto;
@@ -166,6 +164,7 @@
         }
         ul li {
             margin-bottom: 10px;
+            font-weight: 500;
             &:before {
                 width: 7px;
                 height: 7px;
@@ -263,25 +262,30 @@
             }
         }
         &-pic {
-            max-height: 202px;
+            max-height: 232px;
             right: -5px;
-            max-width: 289px;
+            max-width: 319px;
+        }
+        &-item_group &-pic {
+            right: -8px;
+            max-width: 317px;
         }
         &-item_individual &-pic {
-            margin-right: 10px;
+            margin-right: 7px;
+            max-height: 226px;
         }
         &-item_visit &-pic {
-            right: -100px;
-            max-width: 278px;
+            right: -103px;
+            max-width: 317px;
         }
         &-item_group &-img {
             &:after {
                 content: '';
                 position: absolute;
-                right: -64px;
-                bottom: -90px;
-                width: 261px;
-                height: 272px;
+                right: -68px;
+                bottom: -107px;
+                width: 291px;
+                height: 302px;
                 background: url("../images/center/center-bgr-1.png") no-repeat 0 0;
                 background-size: 100% auto;
                 transform: rotate(-15deg);
@@ -293,8 +297,8 @@
                 position: absolute;
                 right: -64px;
                 bottom: -90px;
-                width: 261px;
-                height: 272px;
+                width: 291px;
+                height: 302px;
                 background: url("../images/center/center-bgr-1.png") no-repeat 0 0;
                 background-size: 100% auto;
                 transform: rotate(-15deg);
@@ -302,10 +306,10 @@
         }
         &-item_individual &-img {
             &:after {
-                right: -41px;
-                bottom: -77px;
-                width: 261px;
-                height: 272px;
+                right: -63px;
+                bottom: -91px;
+                width: 291px;
+                height: 302px;
                 transform: rotate(0);
                 background: url("../images/center/center-bgr-2-mob.png") no-repeat 0 0;
             }
