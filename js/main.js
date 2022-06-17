@@ -400,9 +400,6 @@ function openPopupBooking($element) {
             initMask();
             initSelect();
             initForm();
-
-            var index = $element.data('index') || 0;
-            $('.js-select-service .js-select').val(index).selectric('refresh');
         },
         btnTpl: {
             smallBtn:
