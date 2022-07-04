@@ -2,202 +2,239 @@
 @font-face {
   font-family: 'Manrope';
   src: local("Manrope"), url("../fonts/Manrope/Manrope-Light.ttf");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Manrope';
   src: local("Manrope"), url("../fonts/Manrope/Manrope-Regular.ttf");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Manrope';
   src: local("Manrope"), url("../fonts/Manrope/Manrope-Medium.ttf");
-  font-weight: 500; }
+  font-weight: 500;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Manrope';
   src: local("Manrope"), url("../fonts/Manrope/Manrope-SemiBold.ttf");
-  font-weight: 600; }
+  font-weight: 600;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Manrope';
   src: local("Manrope"), url("../fonts/Manrope/Manrope-Bold.ttf");
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Manrope';
   src: local("Manrope"), url("../fonts/Manrope/Manrope-ExtraBold.ttf");
-  font-weight: 800; }
+  font-weight: 800;
+  font-display: swap; }
 
 /* /Manrope */
 /* Montserrat */
 @font-face {
   font-family: 'Montserrat';
   src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Light.ttf");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Montserrat';
   src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Regular.ttf");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Montserrat';
   src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Medium.ttf");
-  font-weight: 500; }
+  font-weight: 500;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Montserrat';
   src: local("Montserrat"), url("../fonts/montserrat/Montserrat-SemiBold.ttf");
-  font-weight: 600; }
+  font-weight: 600;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Montserrat';
   src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Bold.ttf");
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Montserrat';
   src: local("Montserrat"), url("../fonts/montserrat/Montserrat-Black.ttf");
-  font-weight: 900; }
+  font-weight: 900;
+  font-display: swap; }
 
 /* /Montserrat */
 /* Lato */
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latoregular.ttf");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latolight.ttf");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latoitalic.ttf");
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latomedium.ttf");
-  font-weight: 500; }
+  font-weight: 500;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latomediumitalic.ttf");
   font-weight: 500;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latobold.ttf");
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latobolditalic.ttf");
   font-weight: 700;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Lato';
   src: local("Lato"), url("../fonts/lato/latoblack.ttf");
-  font-weight: 900; }
+  font-weight: 900;
+  font-display: swap; }
 
 /* /Lato */
 /* Inter */
 @font-face {
   font-family: 'Inter';
   src: local("Inter"), url("../fonts/Inter/Inter-Light.ttf");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Inter';
   src: local("Inter"), url("../fonts/Inter/Inter-Regular.ttf");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Inter';
   src: local("Inter"), url("../fonts/Inter/Inter-Medium.ttf");
-  font-weight: 500; }
+  font-weight: 500;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Inter';
   src: local("Inter"), url("../fonts/Inter/Inter-SemiBold.ttf");
-  font-weight: 600; }
+  font-weight: 600;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Inter';
   src: local("Inter"), url("../fonts/Inter/Inter-Bold.ttf");
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Inter';
   src: local("Inter"), url("../fonts/Inter/Inter-ExtraBold.ttf");
-  font-weight: 800; }
+  font-weight: 800;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Inter';
   src: local("Inter"), url("../fonts/Inter/Inter-Black.ttf");
-  font-weight: 900; }
+  font-weight: 900;
+  font-display: swap; }
 
 /* /Inter */
 /* Nunito */
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-Light.ttf");
-  font-weight: 300; }
+  font-weight: 300;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-LightItalic.ttf");
   font-weight: 300;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-Regular.ttf");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-Italic.ttf");
   font-weight: 400;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-SemiBold.ttf");
-  font-weight: 600; }
+  font-weight: 600;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-Bold.ttf");
-  font-weight: 700; }
+  font-weight: 700;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-BoldItalic.ttf");
   font-weight: 700;
-  font-style: italic; }
+  font-style: italic;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-ExtraBold.ttf");
-  font-weight: 800; }
+  font-weight: 800;
+  font-display: swap; }
 
 @font-face {
   font-family: 'Nunito';
   src: local("Nunito"), url("../fonts/Nunito/Nunito-Black.ttf");
-  font-weight: 900; }
+  font-weight: 900;
+  font-display: swap; }
 
 /* /Nunito */
 @font-face {
   font-family: 'ALSRubl';
   src: local("ALSRubl"), url("../fonts/ALSRubl/rouble.otf");
-  font-weight: 400; }
+  font-weight: 400;
+  font-display: swap; }
 
 * {
   box-sizing: border-box;
